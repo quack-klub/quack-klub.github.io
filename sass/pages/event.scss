@@ -1,5 +1,5 @@
 .content {
-  width: clamp(600px, 100%, 1200px);
+  width: min(100%, 1200px);
   margin-left: auto;
   margin-right: auto;
 }
