@@ -2,6 +2,12 @@
   font-family: var(--font-body);
   color: var(--text);
   font-size: 1.1rem;
+
+  @media (max-width: 481px) {
+    & {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 a {

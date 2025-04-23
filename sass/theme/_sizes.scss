@@ -1,7 +1,7 @@
 $mobile-desktop-breakpoint: 961px;
 
 :root {
-  --title-size: 2.6rem;
+  --title-size: calc(1em * 2.6 / 1.1);
   --subtitle-size: calc(var(--title-size) * 1.7 / 2.6);
 
   --logo-scaling-factor: 1.2;
