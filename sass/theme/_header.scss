@@ -19,7 +19,8 @@ header,
     }
   }
 
-  a {
+  a,
+  #nav-modal-open {
     text-decoration: none;
     font-weight: 500;
     color: var(--text-black);
@@ -49,26 +50,14 @@ header,
     color: $foreground;
     padding: 0 32px 0 24px;
 
-    div {
-      margin-right: 0.5em;
-      background-color: $foreground;
-      -webkit-mask: url(/assets/calendar_month_w500.svg) no-repeat center;
-      mask: url(/assets/calendar_month_w500.svg) no-repeat center;
-
-      img {
-        opacity: 0;
-        width: 1em;
-      }
-    }
-
     @media (prefers-color-scheme: light) {
       & {
         color: $foreground-light;
       }
+    }
 
-      div {
-        background-color: $foreground-light;
-      }
+    .symbol {
+      margin-right: 0.3em;
     }
   }
 }
@@ -130,24 +119,9 @@ header {
     width: var(--logo-height);
     cursor: pointer;
 
-    div {
-      background-color: $foreground;
-      -webkit-mask: url(/assets/menu_w500.svg) no-repeat center;
-      mask: url(/assets/menu_w500.svg) no-repeat center;
-
-      img {
-        opacity: 0;
-        width: 1.3em;
-      }
-    }
-
     @media (prefers-color-scheme: light) {
       & {
         color: $foreground-light;
-      }
-
-      div {
-        background-color: $foreground-light;
       }
     }
   }
@@ -198,17 +172,6 @@ header {
       height: 1.5em;
       width: 1.5em;
       border-radius: 100%;
-
-      div {
-        background-color: var(--text-black);
-        -webkit-mask: url(/assets/close_w500.svg) no-repeat center;
-        mask: url(/assets/close_w500.svg) no-repeat center;
-
-        img {
-          opacity: 0;
-          width: 1.5em;
-        }
-      }
     }
   }
 
