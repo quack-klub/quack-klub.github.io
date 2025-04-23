@@ -1,0 +1,12 @@
+$mobile-desktop-breakpoint: 961px;
+
+:root {
+  --title-size: 2.6rem;
+  --subtitle-size: calc(var(--title-size) * 1.7 / 2.6);
+
+  --logo-scaling-factor: 1.2;
+  --logo-height: calc(var(--title-size) * var(--logo-scaling-factor));
+  --logo-width: calc(var(--logo-height) * 1.4);
+  --pulse-height: calc(var(--logo-height) / 7);
+  --pulse-radius: calc(var(--pulse-height) / 2);
+}

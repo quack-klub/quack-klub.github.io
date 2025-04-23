@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="{{ get_url(path="sections/home.css") }}" />
+{% endblock head %}
+
+
+{% block content %}
+
+<section class="cover">
+  <div class="title-block pulse">
+    <h1 class="title">{{ section.title }}</h1>
+
+    {% if section.description %}
+    <h2 class="subtitle">{{ section.description }}</h2>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock content %}

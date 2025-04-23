@@ -1,0 +1,37 @@
+base_url = "https://quack.lgbt"
+
+# Site
+title = "QuacK"
+description = "QuacK – Queere Uni-Angehörige an der JKU"
+
+# Language
+default_language = "de"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+external_links_class = "external-link"
+render_emoji = true
+highlight_code = true
+smart_punctuation = true
+definition_list = true
+
+[extra]
+favicon.path = "/assets/favicon.svg"
+
+[extra.nav]
+[[extra.nav.items]]
+path = "/"
+label = "Home"
+
+[[extra.nav.items]]
+path = "/contact"
+label = "Kontakt"
+
+[[extra.nav.items]]
+path = "/about"
+label = "Über QuacK"

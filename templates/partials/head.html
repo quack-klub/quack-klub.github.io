@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="base" content="{{ config.base_url }}">
+
+{# Metadata #}
+{% if page.extra.meta %}
+  {% for data in page.extra.meta %}
+    <meta {% for key, value in data %} {{ key }} None="{{ value }}" {% endfor %} />
+  {% endfor %}
+{% endif %}
+
+{# Title #}
+{% if page.title %}
+  <title>{{ page.title }}</title>
+  <meta name="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+{% elif section.title %}
+  <title>{{ section.title }}</title>
+  <meta name="og:title" content="{{ section.title }}" />
+  <meta name="twitter:title" content="{{ section.title }}" />
+{% elif config.title %}
+  <title>{{ config.title }}</title>
+  <meta name="og:title" content="{{ config.title }}" />
+  <meta name="twitter:title" content="{{ config.title }}" />
+{% else %}
+  <title>QuacK</title>
+  <meta name="og:title" content="QuacK" />
+{% endif %}
+
+{# Description #}
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="twitter:description" content="{{ page.description }}" />
+{% elif config.description %}
+  <meta name="description" content="{{ config.description }}" />
+  <meta property="og:description" content="{{ config.description }}" />
+  <meta property="twitter:description" content="{{ config.description }}" />
+{% endif %}
+
+{# Favicon #}
+{% if page.extra.favicon.path %}
+  <link
+    rel="icon"
+    type="{{ page.extra.favicon.type | default(value="image/png") }}"
+    href="{{ page.extra.favicon.path }}">
+{% elif config.extra.favicon.path %}
+  <link
+    rel="icon"
+    type="{{ config.extra.favicon.type | default(value="image/svg") }}"
+    href="{{ config.extra.favicon.path }}">
+{% endif %}
+
+{# Style #}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ get_url(path="fonts.css") }}" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ get_url(path="material-symbols.css") }}" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  media="screen"
+  href="{{ get_url(path="main.css") }}" />
+
+{# RSS #}
+<link rel="alternate"
+  type="application/atom+xml"
+  title="{{ config.title }}"
+  href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+
+{# JavaScript #}
+<script src="/js/nav.js" defer></script>

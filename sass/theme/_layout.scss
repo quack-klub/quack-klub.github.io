@@ -1,0 +1,15 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: var(--logo-height);
+
+  @media (max-width: $mobile-desktop-breakpoint) {
+    & {
+      margin: calc(var(--logo-height) / 2);
+    }
+  }
+}

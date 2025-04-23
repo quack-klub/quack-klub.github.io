@@ -1,0 +1,36 @@
+// Folder-specific settings
+//
+// For a full list of overridable settings, and general information on folder-specific settings,
+// see the documentation: https://zed.dev/docs/configuring-zed#settings-files
+{
+  "file_types": {
+    "Tera (HTML)": ["html"]
+  },
+  "languages": {
+    "Tera (HTML)": {
+      "tab_size": 2,
+      "use_autoclose": true,
+      "language_servers": [
+        "vscode-html-language-server",
+        "emmet-language-server"
+      ]
+    }
+  },
+  "lsp": {
+    "emmet-language-server": {
+      "settings": {
+        "languages": [
+          "Tera (HTML)",
+          "Tera",
+          "HTML",
+          "PHP",
+          "ERB",
+          "JavaScript",
+          "TSX",
+          "CSS",
+          "Blade"
+        ]
+      }
+    }
+  }
+}

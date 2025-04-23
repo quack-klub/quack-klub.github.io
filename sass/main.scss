@@ -1,0 +1,20 @@
+@import "theme/_sr-only.scss";
+@import "theme/_colors.scss";
+@import "theme/_fonts.scss";
+@import "theme/_sizes.scss";
+@import "theme/_layout.scss";
+@import "theme/_text.scss";
+@import "theme/_elements.scss";
+@import "theme/_heading.scss";
+@import "theme/_header.scss";
+
+@import "parts/_title-block.scss";
+
+@view-transition {
+  navigation: auto;
+}
+
+html {
+  background-color: var(--background);
+  hyphens: auto;
+}

@@ -1,0 +1,89 @@
+main {
+  margin: 0;
+}
+
+.cover {
+  @media (min-width: 1025px) {
+    --title-size: 4rem;
+    --subtitle-size: calc(var(--title-size) * 1.7 / 2.6);
+
+    --logo-scaling-factor: 1.2;
+    --logo-height: calc(var(--title-size) * var(--logo-scaling-factor));
+    --logo-width: calc(var(--logo-height) * 1.4);
+    --pulse-height: calc(var(--logo-height) / 7);
+    --pulse-radius: calc(var(--pulse-height) / 2);
+
+    & {
+      $w: calc(100% / 21);
+      background: linear-gradient(
+        45deg,
+        var(--rnbw-black) $w,
+        var(--rnbw-brown) $w $w * 2,
+        var(--rnbw-red) $w * 2 $w * 3,
+        var(--rnbw-orange) $w * 3 $w * 4,
+        var(--rnbw-yellow) $w * 4 $w * 5,
+        var(--rnbw-green) $w * 5 $w * 6,
+        var(--rnbw-blue) $w * 6 $w * 7,
+        var(--rnbw-purple) $w * 7 $w * 8,
+        var(--rnbw-lightblue) $w * 8 $w * 9,
+        var(--rnbw-pink) $w * 9 $w * 10,
+        var(--rnbw-white) $w * 10 $w * 11,
+        var(--rnbw-pink) $w * 11 $w * 12,
+        var(--rnbw-lightblue) $w * 12 $w * 13,
+        var(--rnbw-purple) $w * 13 $w * 14,
+        var(--rnbw-blue) $w * 14 $w * 15,
+        var(--rnbw-green) $w * 15 $w * 16,
+        var(--rnbw-yellow) $w * 16 $w * 17,
+        var(--rnbw-orange) $w * 17 $w * 18,
+        var(--rnbw-red) $w * 18 $w * 19,
+        var(--rnbw-brown) $w * 19 $w * 20,
+        var(--rnbw-black) $w * 20
+      );
+    }
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  $w: calc(100% / 11);
+  background: linear-gradient(
+    45deg,
+    var(--rnbw-black) $w,
+    var(--rnbw-brown) $w $w * 2,
+    var(--rnbw-red) $w * 2 $w * 3,
+    var(--rnbw-orange) $w * 3 $w * 4,
+    var(--rnbw-yellow) $w * 4 $w * 5,
+    var(--rnbw-green) $w * 5 $w * 6,
+    var(--rnbw-blue) $w * 6 $w * 7,
+    var(--rnbw-purple) $w * 7 $w * 8,
+    var(--rnbw-lightblue) $w * 8 $w * 9,
+    var(--rnbw-pink) $w * 9 $w * 10,
+    var(--rnbw-white) $w * 10
+  );
+
+  .title-block {
+    margin: var(--logo-height);
+    border-radius: var(--pulse-radius);
+    padding: var(--logo-height);
+    height: 100%;
+    background-color: var(--background);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    filter: drop-shadow(4px 4px 8px var(--background));
+
+    @media (min-width: 1025px) {
+      & {
+        margin: calc(var(--logo-height) * 2) var(--logo-height);
+        padding: var(--logo-height) calc(var(--logo-height) * 2)
+          calc(var(--logo-height) * 1.3);
+      }
+    }
+
+    &.pulse::after {
+      margin: auto;
+    }
+  }
+}

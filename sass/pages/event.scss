@@ -1,0 +1,13 @@
+.content {
+  width: clamp(600px, 100%, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-content {
+  img {
+    width: 50%;
+    max-width: 50%;
+    border-radius: var(--pulse-radius);
+  }
+}

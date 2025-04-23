@@ -1,0 +1,88 @@
+ul.events-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template: auto / 1fr;
+  gap: 1ch;
+
+  @media (min-width: 641px) {
+    grid-template: auto / 1fr 1fr;
+  }
+
+  @media (min-width: 1025px) {
+    grid-template: auto / 1fr 1fr 1fr;
+  }
+}
+
+li.event-item {
+  border: 2px solid var(--outline);
+  border-radius: calc(var(--pulse-radius) * 2);
+  position: relative;
+  list-style: none;
+  overflow: clip;
+  transition: border 0.3s ease 0s;
+
+  article {
+    padding: 1rem;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 5.1 / 2; // Discord event aspect ratio
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 0.3ch;
+
+    a {
+      text-decoration: none;
+      color: var(--accent);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  time.date {
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+
+  .info-block {
+    display: grid;
+    grid-template: auto / auto auto;
+    justify-content: space-between;
+
+    .symbol {
+      margin-right: 0.25em;
+    }
+  }
+
+  address {
+    text-align: end;
+    font-style: normal;
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    transition: background-color 0.3s ease 0s;
+  }
+
+  a:hover::after {
+    background-color: var(--selection-hover-overlay);
+  }
+
+  &:hover {
+    border: 2px solid var(--accent);
+    border-radius: calc(var(--pulse-radius) * 2);
+  }
+}

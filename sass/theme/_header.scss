@@ -1,0 +1,228 @@
+$foreground: color-mix(in oklab, black 60%, var(--accent-medium) 80%);
+$foreground-light: color-mix(in oklab, white 90%, var(--accent-medium) 20%);
+$background: var(--accent);
+$background-hover: color-mix(in oklab, var(--accent) 90%, black 20%);
+
+header,
+.nav-modal {
+  .nav-items {
+    list-style: none;
+
+    li {
+      a {
+        transition: color 0.3s ease 0s;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-black);
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+  .cta {
+    display: flex;
+  }
+
+  .cta,
+  #nav-modal-open {
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease 0s;
+    background-color: $background;
+    height: var(--logo-height);
+    border-radius: 50px;
+
+    &:hover {
+      background-color: $background-hover;
+    }
+  }
+
+  .cta {
+    color: $foreground;
+    padding: 0 32px 0 24px;
+
+    div {
+      margin-right: 0.5em;
+      background-color: $foreground;
+      -webkit-mask: url(/assets/calendar_month_w500.svg) no-repeat center;
+      mask: url(/assets/calendar_month_w500.svg) no-repeat center;
+
+      img {
+        opacity: 0;
+        width: 1em;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      & {
+        color: $foreground-light;
+      }
+
+      div {
+        background-color: $foreground-light;
+      }
+    }
+  }
+}
+
+header {
+  display: flex;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  height: var(--logo-height);
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--logo-height) / 3 * 2) var(--logo-height);
+  background-color: color-mix(
+    in oklab,
+    var(--background) 80%,
+    var(--accent) 20%
+  );
+
+  @media (min-width: $mobile-desktop-breakpoint) {
+    .mobile {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: $mobile-desktop-breakpoint) {
+    & {
+      padding: calc(var(--logo-height) / 3) calc(var(--logo-height) / 2);
+    }
+
+    .desktop {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .header-logo {
+    width: var(--logo-width);
+    height: var(--logo-height);
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+
+    .nav-items {
+      display: flex;
+
+      li {
+        padding: 0 calc(var(--logo-height) / 3 * 2);
+      }
+    }
+  }
+
+  #nav-modal-open {
+    border: none;
+    color: $foreground;
+    width: var(--logo-height);
+    cursor: pointer;
+
+    div {
+      background-color: $foreground;
+      -webkit-mask: url(/assets/menu_w500.svg) no-repeat center;
+      mask: url(/assets/menu_w500.svg) no-repeat center;
+
+      img {
+        opacity: 0;
+        width: 1.3em;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      & {
+        color: $foreground-light;
+      }
+
+      div {
+        background-color: $foreground-light;
+      }
+    }
+  }
+}
+
+.nav-modal {
+  $border-radius: calc(var(--pulse-radius) * 2);
+
+  position: fixed;
+  left: auto;
+  right: 0;
+  margin: 0;
+  padding: calc(var(--logo-height) / 3);
+  justify-self: left;
+  border-radius: $border-radius 0 0 $border-radius;
+  width: 360px;
+  height: calc(100vh - 2rem);
+  max-height: calc(100vh - 2rem);
+  background-color: color-mix(
+    in oklab,
+    var(--background) 90%,
+    var(--accent) 10%
+  );
+  border: none;
+
+  .nav-modal-content {
+    height: 100%;
+  }
+
+  &::backdrop {
+    background-color: rgba(black, 0.4);
+  }
+
+  .nav-modal-header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      margin: 0;
+    }
+
+    button {
+      font-size: 1.5em;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      align-items: center;
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 100%;
+
+      div {
+        background-color: var(--text-black);
+        -webkit-mask: url(/assets/close_w500.svg) no-repeat center;
+        mask: url(/assets/close_w500.svg) no-repeat center;
+
+        img {
+          opacity: 0;
+          width: 1.5em;
+        }
+      }
+    }
+  }
+
+  .nav-items {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: calc(var(--logo-height) / 3) calc(var(--logo-height) / 6);
+
+      a {
+        color: var(--text);
+      }
+    }
+  }
+}

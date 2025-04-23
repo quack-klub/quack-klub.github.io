@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block head %}
+<meta name="twitter:card" content="summary" />
+
+{% if page.extra.redirect.url %}
+
+  <link rel="canonical" href="{{ page.extra.redirect.url | safe }}">
+  <script>location="{{ page.extra.redirect.url | safe }}"</script>
+  <meta http-equiv="refresh" content="0; url={{ page.extra.redirect.url | safe }}">
+  <meta name="robots" content="noindex">
+
+{% endif %}
+{% endblock head %}
+
+{% block content %}
+<h1>Du wirst weitergeleitet&hellip;</h1>
+
+{% if page.extra.redirect.url %}
+  <a href="{{ page.extra.redirect.url | safe }}">Klicke hier, wenn du nicht automatisch weitergeleitet wurdest.</a>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,43 @@
+h1 {
+  font-size: 1.7em;
+  font-family: var(--font-heading);
+  color: var(--text-black);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: var(--font-heading);
+  color: var(--text-black);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-family: var(--font-heading);
+  color: var(--text-black);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.3em;
+  color: var(--accent);
+  alternates: true;
+  font-weight: 400;
+  font-feature-settings: "salt";
+}
+
+h5 {
+  font-size: 1.2em;
+  color: var(--accent);
+  alternates: true;
+  font-weight: 400;
+  font-feature-settings: "salt";
+}
+
+h6 {
+  font-size: 1em;
+  color: var(--accent);
+  font-weight: 400;
+  font-feature-settings: "salt";
+}

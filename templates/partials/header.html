@@ -1,0 +1,58 @@
+<header view-transition-name="header">
+  <a href="/"
+    ><img class="header-logo" src="/assets/logo.svg" alt="QuacK Logo"
+  /></a>
+
+  {% if config.extra.nav.items %}
+    <nav class="desktop" view-transition-name="nav">
+      <ul class="nav-items">
+        {% for item in config.extra.nav.items %}
+          <li><a href="{{ item.path }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+
+  <a href="/events" role="button" class="cta desktop"
+    ><div aria-hidden="true">
+      <img src="/assets/calendar_month_w500.svg" alt="Calendar Month Icon" />
+    </div>
+    Events</a
+  >
+
+  <button aria-label="Menü öffnen" class="mobile" id="nav-modal-open">
+    <div aria-hidden="true">
+      <img src="/assets/menu_w500.svg" alt="Menu Icon" />
+    </div>
+  </button>
+</header>
+
+<dialog id="nav-modal" class="nav-modal">
+  <section class="nav-modal-content" >
+    <span class="nav-modal-header">
+      <h2>QuacK</h2>
+      <button id="nav-modal-close" aria-label="Menü schließen">
+        <div aria-hidden="true">
+          <img src="/assets/close_w500.svg" alt="Close icon">
+        </div>
+      </button>
+    </span>
+
+    <hr>
+
+    {% if config.extra.nav.items %}
+      <ul class="nav-items">
+        {% for item in config.extra.nav.items %}
+          <li><a href="{{ item.path }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <a href="/events" role="button" class="cta desktop"
+      ><div aria-hidden="true">
+        <img src="/assets/calendar_month_w500.svg" alt="Calendar Month Icon" />
+      </div>
+      Events</a
+    >
+  </section>
+</dialog>
