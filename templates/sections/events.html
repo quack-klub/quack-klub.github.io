@@ -9,6 +9,7 @@
 {% endblock head %}
 
 {% block content %}
+<div class="content">
 
 {% if section.title %}
 <div class="title-block pulse">
@@ -20,63 +21,131 @@
 </div>
 {% endif %}
 
-<ul role="list" class="events-list">
-
-{# Listing all events in the future #}
 {% set time_now = now() | date(format="%s") | int %}
 
-{% for event in section.pages | reverse %}
-{% set time_event = event.date | date(format="%s") | int %}
+<section>
+  <h1>Kommende Events</h1>
 
-{% if time_event >= time_now %}
+  <ul role="list" class="events-list">
 
-<li role="listitem" class="event-item">
+  {% for event in section.pages | reverse %}
+  {% set time_event = event.date | date(format="%s") | int %}
 
-  {# Check for image and assure alt text #}
+  {% if time_event >= time_now %}
 
-  {% if event.extra.image.path %}
+  <li role="listitem" class="event-item">
 
-    {% if event.extra.image.alt %}
-      <img
-        alt="{{ event.extra.image.alt }}"
-        src="{{ event.extra.image.path | safe }}"
-      >
+    {# Check for image and assure alt text #}
 
-      {% if event.extra.image.description %}
-        <span class="sr-only">Bildbeschreibung: {{ event.extra.image.description }}</span>
+    {% if event.extra.image.path %}
+
+      {% if event.extra.image.alt %}
+        <img
+          alt="{{ event.extra.image.alt }}"
+          src="{{ event.extra.image.path | safe }}"
+        >
+
+        {% if event.extra.image.description %}
+          <span class="sr-only">Bildbeschreibung: {{ event.extra.image.description }}</span>
+        {% endif %}
+      {% else %}
+        <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image.alt`" | markdown(inline=true) | safe }}</p>
       {% endif %}
-    {% else %}
-      <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image.alt`" | markdown(inline=true) | safe }}</p>
+
     {% endif %}
+
+    <article>
+      <h3 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
+
+      {% if event.summary %}
+        <p>{{ event.summary | safe }}</p>
+      {% elif event.description %}
+        <p>{{ event.description | markdown() | safe }}</p>
+      {% endif %}
+
+      <hr>
+
+      <span class="info-block">
+        {# Check if date contains time #}
+        {% set date_format = "%-d. %B %y" %}
+        {% if "T" in event.date %} {% set date_format = date_format ~ ", %H:%M" %} {% endif %}
+
+        <time datetime="{{ event.date }}" class="date"><span class="symbol" aria-hidden="true">event</span>{{ event.date | date(format=date_format, locale="de_AT") }}</time>
+
+        {% if event.extra.location %}
+          <address><span class="symbol" aria-hidden="true">map</span>{{ event.extra.location }}</address>
+        {% endif %}
+      </span>
+    </article>
+  </li>
 
   {% endif %}
+  {% endfor %}
+  </ul>
+</section>
 
-  <article>
-    <h3 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
+<div class="spacer" aria-hidden="true"></div>
 
-    {% if event.summary %}
-      <p>{{ event.summary | safe }}</p>
-    {% elif event.description %}
-      <p>{{ event.description | markdown() | safe }}</p>
+<section>
+  <h1>Vergangene Events</h1>
+
+  <ul role="list" class="events-list">
+
+  {% for event in section.pages | reverse %}
+  {% set time_event = event.date | date(format="%s") | int %}
+
+  {% if time_event < time_now %}
+
+  <li role="listitem" class="event-item">
+
+    {# Check for image and assure alt text #}
+
+    {% if event.extra.image.path %}
+
+      {% if event.extra.image.alt %}
+        <img
+          alt="{{ event.extra.image.alt }}"
+          src="{{ event.extra.image.path | safe }}"
+        >
+
+        {% if event.extra.image.description %}
+          <span class="sr-only">Bildbeschreibung: {{ event.extra.image.description }}</span>
+        {% endif %}
+      {% else %}
+        <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image.alt`" | markdown(inline=true) | safe }}</p>
+      {% endif %}
+
     {% endif %}
 
-    <hr>
+    <article>
+      <h3 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
 
-    <span class="info-block">
-      {# Check if date contains time #}
-      {% set date_format = "%-d. %B %y" %}
-      {% if "T" in event.date %} {% set date_format = date_format ~ ", %H:%M" %} {% endif %}
-
-      <time datetime="{{ event.date }}" class="date"><span class="symbol" aria-hidden="true">event</span>{{ event.date | date(format=date_format, locale="de_AT") }}</time>
-
-      {% if event.extra.location %}
-        <address><span class="symbol" aria-hidden="true">map</span>{{ event.extra.location }}</address>
+      {% if event.summary %}
+        <p>{{ event.summary | safe }}</p>
+      {% elif event.description %}
+        <p>{{ event.description | markdown() | safe }}</p>
       {% endif %}
-    </span>
-  </article>
-</li>
 
-{% endif %}
-{% endfor %}
-</ul>
+      <hr>
+
+      <span class="info-block">
+        {# Check if date contains time #}
+        {% set date_format = "%-d. %B %y" %}
+        {% if "T" in event.date %} {% set date_format = date_format ~ ", %H:%M" %} {% endif %}
+
+        <time datetime="{{ event.date }}" class="date"><span class="symbol" aria-hidden="true">event</span>{{ event.date | date(format=date_format, locale="de_AT") }}</time>
+
+        {% if event.extra.location %}
+          <address><span class="symbol" aria-hidden="true">map</span>{{ event.extra.location }}</address>
+        {% endif %}
+      </span>
+    </article>
+  </li>
+
+  {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+
+</div>
 {% endblock content %}

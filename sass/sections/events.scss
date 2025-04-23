@@ -1,3 +1,13 @@
+.content {
+  width: clamp(320px, 100%, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacer {
+  height: var(--logo-height);
+}
+
 ul.events-list {
   margin: 0;
   padding: 0;
@@ -7,10 +17,6 @@ ul.events-list {
 
   @media (min-width: 641px) {
     grid-template: auto / 1fr 1fr;
-  }
-
-  @media (min-width: 1025px) {
-    grid-template: auto / 1fr 1fr 1fr;
   }
 }
 
