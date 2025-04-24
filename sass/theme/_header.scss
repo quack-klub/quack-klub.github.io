@@ -137,7 +137,7 @@ header {
   padding: calc(var(--logo-height) / 3);
   justify-self: left;
   border-radius: $border-radius 0 0 $border-radius;
-  width: 360px;
+  width: min(70vw, 360px);
   height: calc(100vh - 2rem);
   max-height: calc(100vh - 2rem);
   background-color: color-mix(
@@ -161,10 +161,14 @@ header {
 
     h2 {
       margin: 0;
+      font-family: var(--font-title);
     }
 
     button {
       font-size: 1.5em;
+      font-family: var(--font-title);
+      font-weight: 500;
+      padding-bottom: 12px;
       cursor: pointer;
       border: none;
       background-color: transparent;

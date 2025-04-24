@@ -13,3 +13,13 @@ main {
     }
   }
 }
+
+div.spacer {
+  height: var(--logo-height);
+}
+
+div.content {
+  width: min(100%, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
