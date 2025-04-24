@@ -52,7 +52,7 @@
         >
 
         {% if event.extra.image.description %}
-          <span class="sr-only">Bildbeschreibung: {{ event.extra.image.description }}</span>
+          <span class="sr-only-focusable">Bildbeschreibung: {{ event.extra.image.description }}</span>
         {% endif %}
       {% else %}
         <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image.alt`" | markdown(inline=true) | safe }}</p>
