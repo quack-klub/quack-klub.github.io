@@ -35,20 +35,23 @@
 {% endif %}
 
 <section class="event-content">
-{% if page.extra.image and page.extra.image.path %}
 
-  {% if page.extra.image.alt %}
-    <img
-      alt="{{ page.extra.image.alt }}"
-      src="{{ page.extra.image.path | safe }}"
-    >
-  {% else %}
-    <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image-alt`" | markdown(inline=true) | safe }}</p>
+  {{ page.content | safe }}
+
+  {% if page.extra.image and page.extra.image.path %}
+    <div aria-hidden="true" class="spacer"></div>
+
+    {% if page.extra.image.alt %}
+      <img
+        alt="{{ page.extra.image.alt }}"
+        src="{{ page.extra.image.path | safe }}"
+      >
+    {% else %}
+      <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image-alt`" | markdown(inline=true) | safe }}</p>
+    {% endif %}
+
   {% endif %}
 
-{% endif %}
-
-{{ page.content | safe }}
 </section>
 </div>
 
