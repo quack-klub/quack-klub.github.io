@@ -22,6 +22,8 @@
 {% endblock head %}
 
 {% block content %}
+  <div class="content">
+
   {% if page.title %}
   <div class="title-block pulse">
     <h1 class="title">{{ page.title }}</h1>
@@ -33,4 +35,6 @@
   {% endif %}
 
   {{ page.content | safe }}
+
+  </div>
 {% endblock content %}
