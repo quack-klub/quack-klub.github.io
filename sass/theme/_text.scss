@@ -1,12 +1,35 @@
-* {
-  font-family: var(--font-body);
-  color: var(--text);
-  font-size: 1.1rem;
+$selection-bg: color-mix(in oklab, var(--accent) 30%, transparent 70%);
+$selection-fg: var(--text);
 
-  @media (max-width: 481px) {
-    & {
-      font-size: 0.9rem;
-    }
+::-moz-selection {
+  color: $selection-fg;
+  background: $selection-bg;
+}
+
+::selection {
+  color: $selection-fg;
+  background: $selection-bg;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-size);
+
+  &,
+  button,
+  p,
+  span,
+  div {
+    color: var(--text);
+    -webkit-tap-highlight-color: color-mix(
+      in oklab,
+      var(--accent) 30%,
+      transparent 70%
+    );
+  }
+
+  p {
+    font-size: 1.1em;
   }
 }
 

@@ -1,6 +1,7 @@
 $mobile-desktop-breakpoint: 961px;
 
 :root {
+  --text-size: 1.1rem;
   --title-size: calc(1em * 2.6 / 1.1);
   --subtitle-size: calc(var(--title-size) * 1.7 / 2.6);
 
@@ -9,4 +10,10 @@ $mobile-desktop-breakpoint: 961px;
   --logo-width: calc(var(--logo-height) * 1.4);
   --pulse-height: calc(var(--logo-height) / 7);
   --pulse-radius: calc(var(--pulse-height) / 2);
+
+  @media (max-width: 481px) {
+    & {
+      --text-size: 1rem;
+    }
+  }
 }

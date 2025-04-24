@@ -31,13 +31,14 @@ li.event-item {
     margin: 0;
   }
 
-  h3 {
+  h4 {
     margin: 0;
     margin-bottom: 0.3ch;
 
     a {
       text-decoration: none;
       color: var(--accent);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 
