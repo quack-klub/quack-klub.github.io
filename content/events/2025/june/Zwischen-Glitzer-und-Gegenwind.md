@@ -15,6 +15,6 @@ redirect.url = "https://www.jku.at/gleichstellung-chancengerechtigkeit-und-vielf
 
 Zwei Drag Queens geben Einblicke in ihre persönliche Erfahrung mit Drag – auf der Bühne und im Alltag.
 
-Ein interaktiver Workshop mit Raum für Fragen, Austausch und Perspek-tiven. Offen für alle, unabhängig von Vorerfahrung oder Hintergrund.
+Ein interaktiver Workshop mit Raum für Fragen, Austausch und Perspektiven. Offen für alle, unabhängig von Vorerfahrung oder Hintergrund.
 
 <!-- more -->
