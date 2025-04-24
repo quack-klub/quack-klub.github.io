@@ -24,6 +24,12 @@
 {% set time_now = now() | date(format="%s") | int %}
 
 <section>
+  {{ section.content | safe }}
+</section>
+
+<div class="spacer"></div>
+
+<section>
   <h1>Kommende Events</h1>
 
   <ul role="list" class="events-list">
@@ -84,7 +90,7 @@
   </ul>
 </section>
 
-<div class="spacer" aria-hidden="true"></div>
+<div class="spacer"></div>
 
 <section>
   <h1>Vergangene Events</h1>
