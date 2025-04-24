@@ -16,7 +16,7 @@
   <h1 class="title">{{ section.title }}</h1>
 
   {% if section.description %}
-  <h2 class="subtitle">{{ section.description }}</h2>
+  <h4 class="subtitle">{{ section.description }}</h4>
   {% endif %}
 </div>
 {% endif %}
@@ -61,7 +61,7 @@
     {% endif %}
 
     <article>
-      <h3 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
+      <h4 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
 
       {% if event.summary %}
         <p>{{ event.summary | safe }}</p>
@@ -115,7 +115,7 @@
         >
 
         {% if event.extra.image.description %}
-          <span class="sr-only">Bildbeschreibung: {{ event.extra.image.description }}</span>
+          <span class="sr-only-focusable">Bildbeschreibung: {{ event.extra.image.description }}</span>
         {% endif %}
       {% else %}
         <p style="color: var(--error)">{{ "No alt text provided! Please specify `extra.image.alt`" | markdown(inline=true) | safe }}</p>
@@ -124,7 +124,7 @@
     {% endif %}
 
     <article>
-      <h3 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
+      <h4 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
 
       {% if event.summary %}
         <p>{{ event.summary | safe }}</p>
