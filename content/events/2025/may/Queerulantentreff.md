@@ -5,14 +5,14 @@ date = 2025-05-10
 
 [extra]
 image.path = "/img/events/queerulantentreff_pleschinger.webp"
-image.alt = "Queerulantetreff Header"
-image.description = "Ein Bild"
+image.alt = "Ein Bild des Pleschinger Sees und darüber der Text \"30. Queerulantentreff: Spaziergang zum Plesch\""
+image.description = "Im Hintergrund befindet sich ein Foto des Pleschinger Sees. Im rechten und oberen Teil des Fotos sind Bäume und eine grüne Wiese zu sehen. Im links unteren Teil sieht man den See selbst. Das Wasser ist klar und das Wetter sonnig und schön. Im Fordergrund des Bildes ist das QuacK Logo zu sehen und darunter der Titel der Veranstaltung: \"Queerulantentreff: Spaziergang zum Plesch\"."
 
 location = "JKU | Kepler Hall"
 +++
 
-Zum Anlass des Monats der Vielfalts und unserem 30. Jubiläum wollen wir gemeinsam einen kleinen Spaziergang machen. Dafür treffen wir uns um 14:00 bei der Kepler Hall und brechen dann gemeinsam auf in Richtung Pleschinger See.
+Zum Anlass des Monats der Vielfalt und unserem 30. Jubiläum wollen wir gemeinsam einen kleinen Spaziergang machen. Dafür treffen wir uns um 14:00 bei der Kepler Hall und brechen dann gemeinsam auf in Richtung Pleschinger See.
 
-Wir werden durch die grüneren Teile Linz gehen und gemeinsam die umliegenden Gebiete der Uni erkundigen. Am Pleschinger See angekommen wird es ein Picknick geben und ein gemütliches Beisammensein. Auch hausgemachte Mehlspeßen wird es geben!
+Wir werden durch die grüneren Teile Linz gehen und gemeinsam die umliegenden Gebiete der Uni erkundigen. Am Pleschinger See angekommen wird es ein Picknick und ein gemütliches Beisammensein geben, sowie hausgemachte Mehlspeißen!
 
 Bitte nimm auch gerne selbst Essen und Trinken mit, je mehr desto besser!
