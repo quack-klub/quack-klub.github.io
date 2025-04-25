@@ -43,12 +43,12 @@
 {% if page.extra.favicon.path %}
   <link
     rel="icon"
-    type="{{ page.extra.favicon.type | default(value="image/png") }}"
+    type="{{ page.extra.favicon.type | default(value="image/png") | safe }}"
     href="{{ page.extra.favicon.path }}">
 {% elif config.extra.favicon.path %}
   <link
     rel="icon"
-    type="{{ config.extra.favicon.type | default(value="image/svg") }}"
+    type="{{ config.extra.favicon.type | default(value="image/svg") | safe }}"
     href="{{ config.extra.favicon.path }}">
 {% endif %}
 
