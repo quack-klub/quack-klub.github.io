@@ -4,4 +4,18 @@
     max-width: 100%;
     border-radius: var(--pulse-radius);
   }
+
+  table {
+    font-size: calc(var(--text-size) * 1.1);
+    border-collapse: separate;
+    border-spacing: 2em 0.5em;
+
+    th {
+      text-align: start;
+
+      .symbol {
+        margin-right: 0.25em;
+      }
+    }
+  }
 }

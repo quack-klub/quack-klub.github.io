@@ -1,14 +1,16 @@
 +++
 title = "30. Queerulanten­treff: Spaziergang zum Plesch’"
 description = "Wir gehen gemeinsam zum Pleschinger See spazieren."
-date = 2025-05-10
+date = 2025-05-10T14:00:00
 
 [extra]
-image.path = "/img/events/queerulantentreff_pleschinger.webp"
-image.alt = "Ein Bild des Pleschinger Sees und darüber der Text \"30. Queerulantentreff: Spaziergang zum Plesch\""
-image.description = "Im Hintergrund befindet sich ein Foto des Pleschinger Sees. Im rechten und oberen Teil des Fotos sind Bäume und eine grüne Wiese zu sehen. Im links unteren Teil sieht man den See selbst. Das Wasser ist klar und das Wetter sonnig und schön. Im Fordergrund des Bildes ist das QuacK Logo zu sehen und darunter der Titel der Veranstaltung: \"Queerulantentreff: Spaziergang zum Plesch\"."
-
 location = "JKU | Kepler Hall"
+end_date = 2025-05-10T17:00:00
+
+[extra.image]
+path = "/img/events/queerulantentreff_pleschinger.webp"
+alt = "Ein Bild des Pleschinger Sees und darüber der Text \"30. Queerulantentreff: Spaziergang zum Plesch\""
+description = "Im Hintergrund befindet sich ein Foto des Pleschinger Sees. Im rechten und oberen Teil des Fotos sind Bäume und eine grüne Wiese zu sehen. Im links unteren Teil sieht man den See selbst. Das Wasser ist klar und das Wetter sonnig und schön. Im Fordergrund des Bildes ist das QuacK Logo zu sehen und darunter der Titel der Veranstaltung: \"Queerulantentreff: Spaziergang zum Plesch\"."
 +++
 
 Zum Anlass des Monats der Vielfalt und unserem 30. Jubiläum wollen wir gemeinsam einen kleinen Spaziergang machen. Dafür treffen wir uns um 14:00 bei der Kepler Hall und brechen dann gemeinsam auf in Richtung Pleschinger See.

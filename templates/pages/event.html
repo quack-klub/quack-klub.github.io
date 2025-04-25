@@ -36,6 +36,34 @@
 
 <section class="event-content">
 
+  <table>
+    <tbody>
+      <tr>
+        <th scope="row"><span class="symbol" aria-hidden="true">event</span>Datum</th>
+        <td><time datetime="{{ page.date }}">{{ page.date | date(format="%-d. %B %Y", locale="de_AT") }}</time></td>
+      </tr>
+      {% if "T" in page.date %}
+      <tr>
+        <th scope="row"><span class="symbol" aria-hidden="true">schedule</span>Uhrzeit</th>
+        <td>
+          <time datetime="{{ page.date }}">{{ page.date | date(format="%H:%M", locale="de_AT") }}</time>
+          {%- if page.extra.end_date and "T" in page.extra.end_date -%}
+            &ndash;<time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date | date(format="%H:%M", locale="de_AT") }}</time>
+          {%- endif -%}
+        </td>
+      </tr>
+      {% endif %}
+      {% if page.extra.location %}
+      <tr>
+        <th scope="row"><span class="symbol" aira-hidden="true">map</span>Ort</th>
+        <td>{{ page.extra.location | safe }}</td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+
+  <div aria-hidden="true" class="spacer"></div>
+
   {{ page.content | safe }}
 
   {% if page.extra.image and page.extra.image.path %}
