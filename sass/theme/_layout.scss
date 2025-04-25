@@ -23,3 +23,17 @@ div.content {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: $mobile-desktop-breakpoint) {
+  .mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: $mobile-desktop-breakpoint) {
+  .desktop {
+    display: none;
+    visibility: hidden;
+  }
+}

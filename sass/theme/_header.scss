@@ -78,21 +78,9 @@ header {
     var(--accent) 20%
   );
 
-  @media (min-width: $mobile-desktop-breakpoint) {
-    .mobile {
-      display: none;
-      visibility: hidden;
-    }
-  }
-
   @media (max-width: $mobile-desktop-breakpoint) {
     & {
       padding: calc(var(--logo-height) / 3) calc(var(--logo-height) / 2);
-    }
-
-    .desktop {
-      display: none;
-      visibility: hidden;
     }
   }
 
