@@ -13,7 +13,7 @@
 
 {% if section.title %}
 <div class="title-block pulse">
-  <h1 class="title">{{ section.title }}</h1>
+  <h1 class="title">{{ section.title }}</h2>
 
   {% if section.description %}
   <h4 class="subtitle">{{ section.description }}</h4>
@@ -30,7 +30,7 @@
 <div class="spacer"></div>
 
 <section>
-  <h1>Kommende Events</h1>
+  <h2>Kommende Events</h2>
 
   <ul role="list" class="events-list">
 
@@ -71,7 +71,7 @@
 
       <hr>
 
-      <span class="info-block">
+      <div class="info-block">
         {# Check if date contains time #}
         {% set date_format = "%-d. %B %y" %}
         {% if "T" in event.date %} {% set date_format = date_format ~ ", %H:%M" %} {% endif %}
@@ -93,9 +93,9 @@
 <div class="spacer"></div>
 
 <section>
-  <h1>Vergangene Events</h1>
+  <h2>Vergangene Events</h2>
 
-  <ul role="list" class="events-list">
+  <ul class="events-list">
 
   {% for event in section.pages | reverse %}
   {% set time_event = event.date | date(format="%s") | int %}
@@ -134,7 +134,7 @@
 
       <hr>
 
-      <span class="info-block">
+      <div class="info-block">
         {# Check if date contains time #}
         {% set date_format = "%-d. %B %y" %}
         {% if "T" in event.date %} {% set date_format = date_format ~ ", %H:%M" %} {% endif %}
@@ -144,7 +144,7 @@
         {% if event.extra.location %}
           <address><span class="symbol" aria-hidden="true">map</span>{{ event.extra.location }}</address>
         {% endif %}
-      </span>
+      </div>
     </article>
   </li>
 
