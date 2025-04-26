@@ -48,6 +48,7 @@ div.content {
 @media (max-width: $breakpoint-medium) {
   .not-medium {
     visibility: hidden;
+    display: none;
   }
 }
 

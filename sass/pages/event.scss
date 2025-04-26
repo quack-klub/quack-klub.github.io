@@ -8,7 +8,24 @@
   table {
     font-size: calc(var(--text-size) * 1.1);
     border-collapse: separate;
-    border-spacing: 2em 0.5em;
+    border-radius: var(--pulse-radius);
+    border: 2px solid var(--accent);
+
+    &.medium {
+      border-spacing: 2em 1.4em;
+    }
+
+    &.not-medium {
+      border-spacing: 1em 1.4em;
+
+      td {
+        padding-right: 2em;
+      }
+
+      tr td:last-child {
+        padding-right: 0em;
+      }
+    }
 
     th {
       text-align: start;
