@@ -64,9 +64,9 @@
       <h4 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
 
       {% if event.summary %}
-        <p>{{ event.summary | safe }}</p>
+        {{ event.summary | safe }}
       {% elif event.description %}
-        <p>{{ event.description | markdown() | safe }}</p>
+        {{ event.description | markdown() | safe }}
       {% endif %}
 
       <hr>
