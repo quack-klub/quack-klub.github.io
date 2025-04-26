@@ -13,6 +13,12 @@
 
     &.medium {
       border-spacing: 2em 1.4em;
+
+      @media (max-width: $breakpoint-compact) {
+        & {
+          width: 100%;
+        }
+      }
     }
 
     &.not-medium {
