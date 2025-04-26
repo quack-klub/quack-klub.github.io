@@ -13,6 +13,10 @@ $breakpoint-expanded: 1200px;
   --pulse-height: calc(var(--logo-height) / 7);
   --pulse-radius: calc(var(--pulse-height) / 2);
 
+  --breakpoint-compact: $breakpoint-compact;
+  --breakpoint-medium: $breakpoint-medium;
+  --breakpoint-expanded: $breakpoint-expanded;
+
   @media (max-width: 481px) {
     & {
       --text-size: 1rem;
