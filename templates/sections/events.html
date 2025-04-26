@@ -13,7 +13,7 @@
 
 {% if section.title %}
 <div class="title-block pulse">
-  <h1 class="title">{{ section.title }}</h2>
+  <h1 class="title">{{ section.title }}</h1>
 
   {% if section.description %}
   <h4 class="subtitle">{{ section.description }}</h4>
@@ -32,7 +32,7 @@
 <section>
   <h2>Kommende Events</h2>
 
-  <ul role="list" class="events-list">
+  <ul class="events-list">
 
   {% for event in section.pages | reverse %}
   {% set time_event = event.date | date(format="%s") | int %}
