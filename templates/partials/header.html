@@ -1,10 +1,10 @@
-<header style="view-transition-name: 'header'">
+<header style="view-transition-name: header">
   <a href="/"
     ><img class="header-logo" src="/assets/logo.svg" alt="QuacK Logo"
   /></a>
 
   {% if config.extra.nav.items %}
-    <nav class="desktop" style="view-transition-name: 'nav'">
+    <nav class="desktop" style="view-transition-name: nav">
       <ul class="nav-items">
         {% for item in config.extra.nav.items %}
           <li><a href="{{ item.path }}">{{ item.label }}</a></li>
