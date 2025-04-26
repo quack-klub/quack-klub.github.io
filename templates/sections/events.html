@@ -39,7 +39,7 @@
 
   {% if time_event >= time_now %}
 
-  <li role="listitem" class="event-item">
+  <li class="event-item">
 
     {# Check for image and assure alt text #}
 
@@ -102,7 +102,7 @@
 
   {% if time_event < time_now %}
 
-  <li role="listitem" class="event-item">
+  <li class="event-item">
 
     {# Check for image and assure alt text #}
 
@@ -127,9 +127,9 @@
       <h4 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
 
       {% if event.summary %}
-        <p>{{ event.summary | safe }}</p>
+        {{ event.summary | safe }}
       {% elif event.description %}
-        <p>{{ event.description | markdown() | safe }}</p>
+        {{ event.description | markdown() | safe }}
       {% endif %}
 
       <hr>
