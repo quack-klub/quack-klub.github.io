@@ -7,7 +7,7 @@ html {
 main {
   margin: var(--logo-height);
 
-  @media (max-width: $mobile-desktop-breakpoint) {
+  @media (max-width: $breakpoint-compact) {
     & {
       margin: calc(var(--logo-height) / 2);
     }
@@ -24,16 +24,43 @@ div.content {
   margin-right: auto;
 }
 
-@media (min-width: $mobile-desktop-breakpoint) {
-  .mobile {
+@media (min-width: $breakpoint-compact) {
+  .compact {
+    visibility: hidden;
     display: none;
+  }
+}
+
+@media (max-width: $breakpoint-compact) {
+  .not-compact {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .medium {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .not-medium {
     visibility: hidden;
   }
 }
 
-@media (max-width: $mobile-desktop-breakpoint) {
-  .desktop {
-    display: none;
+@media (min-width: $breakpoint-expanded) {
+  .expanded {
     visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-expanded) {
+  .not-expanded {
+    visibility: hidden;
+    display: none;
   }
 }

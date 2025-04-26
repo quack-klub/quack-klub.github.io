@@ -36,7 +36,7 @@
 
 <section class="event-content">
 
-  <table>
+  <table class="medium">
     <tbody>
       <tr>
         <th scope="row"><span class="symbol" aria-hidden="true">event</span>Datum</th>
@@ -60,6 +60,31 @@
       </tr>
       {% endif %}
     </tbody>
+  </table>
+
+  <table class="not-medium">
+    <colgroup span="2" id="col-date" />
+    {% if "T" in page.date %} <colgroup span="2" id="col-time" /> {% endif %}
+    {% if page.extra.location %} <colgroup span="2" id="col-location" /> {% endif %}
+    <tbody>
+     <tr>
+       <th scope="colgroup"><span class="symbol" aria-hidden="true">event</span>Datum</th>
+       <td><time datetime="{{ page.date }}">{{ page.date | date(format="%-d. %B %Y", locale="de_AT") }}</time></td>
+
+       {% if "T" in page.date %}
+         <th scope="colgroup"><span class="symbol" aria-hidden="true">schedule</span>Uhrzeit</th>
+         <td>
+           <time datetime="{{ page.date }}">{{ page.date | date(format="%H:%M", locale="de_AT") }}</time>
+           {%- if page.extra.end_date and "T" in page.extra.end_date -%}
+             &ndash;<time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date | date(format="%H:%M", locale="de_AT") }}</time>
+           {%- endif -%}
+         </td>
+       {% endif %}
+       {% if page.extra.location %}
+         <th scope="colgroup"><span class="symbol" aira-hidden="true">map</span>Ort</th>
+         <td>{{ page.extra.location | safe }}</td>
+       {% endif %}
+     </tr>
   </table>
 
   <div aria-hidden="true" class="spacer"></div>
