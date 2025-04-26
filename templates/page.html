@@ -1,23 +1,23 @@
 {% extends "base.html" %}
 
 {% block head %}
-  <meta name="keywords" content="quack,queer,jku,linz,jku queer" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="keywords" content="quack,queer,jku,linz,jku queer">
+  <meta name="twitter:card" content="summary">
 
   {% if page.extra.image.path %}
-    <meta name="og:image" content="{{ get_url(path=page.extra.image.path) }}" />
-    <meta name="twitter:image" content="{{ get_url(path=page.extra.image.path) }}" />
+    <meta name="og:image" content="{{ get_url(path=page.extra.image.path) }}">
+    <meta name="twitter:image" content="{{ get_url(path=page.extra.image.path) }}">
 
     {% if page.extra.image.alt %}
-      <meta name="og:image:alt" content="{{ page.extra.image.alt }}" />
-      <meta name="twitter:image:alt" content="{{ page.extra.image.alt }}" />
+      <meta name="og:image:alt" content="{{ page.extra.image.alt }}">
+      <meta name="twitter:image:alt" content="{{ page.extra.image.alt }}">
     {% endif %}
   {% else %}
-    <meta name="og:image" content="{{ get_url(path="/img/default-preview.webp") }}" />
-    <meta name="twitter:image" content="{{ get_url(path="/img/default-preview.webp") }}" />
+    <meta name="og:image" content="{{ get_url(path="/img/default-preview.webp") }}">
+    <meta name="twitter:image" content="{{ get_url(path="/img/default-preview.webp") }}">
 
-    <meta name="og:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU" />
-    <meta name="twitter:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU" />
+    <meta name="og:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU">
+    <meta name="twitter:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU">
   {% endif %}
 {% endblock head %}
 

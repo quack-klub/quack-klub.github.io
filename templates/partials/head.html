@@ -6,37 +6,37 @@
 {# Metadata #}
 {% if page.extra.meta %}
   {% for data in page.extra.meta %}
-    <meta {% for key, value in data %} {{ key }} None="{{ value }}" {% endfor %} />
+    <meta {% for key, value in data %} {{ key }} None="{{ value }}" {% endfor %}>
   {% endfor %}
 {% endif %}
 
 {# Title #}
 {% if page.title %}
   <title>{{ page.title }}</title>
-  <meta name="og:title" content="{{ page.title }}" />
-  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="og:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}">
 {% elif section.title %}
   <title>{{ section.title }}</title>
-  <meta name="og:title" content="{{ section.title }}" />
-  <meta name="twitter:title" content="{{ section.title }}" />
+  <meta name="og:title" content="{{ section.title }}">
+  <meta name="twitter:title" content="{{ section.title }}">
 {% elif config.title %}
   <title>{{ config.title }}</title>
-  <meta name="og:title" content="{{ config.title }}" />
-  <meta name="twitter:title" content="{{ config.title }}" />
+  <meta name="og:title" content="{{ config.title }}">
+  <meta name="twitter:title" content="{{ config.title }}">
 {% else %}
   <title>QuacK</title>
-  <meta name="og:title" content="QuacK" />
+  <meta name="og:title" content="QuacK">
 {% endif %}
 
 {# Description #}
 {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="twitter:description" content="{{ page.description }}" />
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="twitter:description" content="{{ page.description }}">
 {% elif config.description %}
-  <meta name="description" content="{{ config.description }}" />
-  <meta property="og:description" content="{{ config.description }}" />
-  <meta property="twitter:description" content="{{ config.description }}" />
+  <meta name="description" content="{{ config.description }}">
+  <meta property="og:description" content="{{ config.description }}">
+  <meta property="twitter:description" content="{{ config.description }}">
 {% endif %}
 
 {# Favicon #}
