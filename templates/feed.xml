@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ lang }}">
   <title>{{ config.title }}
-  {%- if term %} - {{ term.name }}
-  {%- elif section.title %} - {{ section.title }}
+  {%- if term %} / {{ term.name }}
+  {%- elif section.title %} / {{ section.title }}
   {%- endif -%}
   </title>
+  <author>
+    <name>{{ config.author }}</name>
+    <uri>{{ config.base_url }}</uri>
+    {%- if config.extra.email %}
+    <email>{{ config.extra.email }}</email>
+    {%- endif %}
+  </author>
+  {%- if config.extra.favicon.path %}
+  <icon>{{ get_url(path=config.extra.favicon.path) | safe }}</icon>
+  {%- endif %}
+  {%- if config.extra.banner.path %}
+  <logo>{{ get_url(path=config.extra.banner.path) | safe }}</logo>
+  {%- endif %}
   {%- if config.description %}
   <subtitle>{{ config.description }}</subtitle>
   {%- endif %}
@@ -24,7 +37,7 @@
       <title>{{ page.title }}</title>
       <published>{{ page.date | date(format="%+") }}</published>
       <updated>{{ page.updated | default(value=page.date) | date(format="%+") }}</updated>
-      {% for author in page.authors %}
+      {%- for author in page.authors %}
       <author>
         <name>
           {{ author }}
@@ -32,35 +45,39 @@
       </author>
       {% else %}
       <author>
-        <name>
-          {%- if config.author -%}
-            {{ config.author }}
-          {%- else -%}
-            Unknown
-          {%- endif -%}
-        </name>
+        <name>{{ config.author }}</name>
+        <uri>{{ config.base_url | safe }}</uri>
+        {%- if config.extra.email %}
+        <email>{{ config.extra.email }}</email>
+        {%- endif -%}
       </author>
-      {% endfor %}
+      {% endfor -%}
       <link rel="via" type="text/html" href="{{ page.permalink | safe }}"/>
-      {% if page.extra.image.path %}
-      <link rel="enclosure" type="image/webp" href="{{ get_url(path=page.extra.image.path) }}"/>
-      {% endif %}
+      {% if page.extra.image.path -%}
+      <link rel="enclosure" type="image/webp" href="{{ get_url(path=page.extra.image.path) | safe }}"/>
+      {% endif -%}
       <id>{{ page.permalink | safe }}</id>
-      {% if page.summary %}
+      {%- if page.summary %}
       <summary type="html">
         {%- if page.extra.image.path -%}
-        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&gt;
+        &lt;img
+          src=&quot;{{ get_url(path=page.extra.image.path) | safe }}&quot;
+          alt=&quot;{{ page.extra.image.alt | escape_xml | regex_replace(pattern="&quot;", rep="&amp;quot;") | safe }}&quot;
+        &gt;
         {%- endif -%}
         {{ page.summary }}
       </summary>
       {% else %}
       <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">
         {%- if page.extra.image.path -%}
-        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&gt;
+        &lt;img
+          src=&quot;{{ get_url(path=page.extra.image.path) | safe }}&quot;
+          alt=&quot;{{ page.extra.image.alt | escape_xml | regex_replace(pattern="&quot;", rep="&amp;quot;") }}&quot;
+        &gt;
         {%- endif -%}
-        {{ page.content }}
+        {{- page.content -}}
       </content>
-      {% endif %}
+      {%- endif %}
     </entry>
   {%- endfor %}
 </feed>
