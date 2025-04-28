@@ -3,6 +3,7 @@ base_url = "https://quack.lgbt"
 # Site
 title = "QuacK"
 description = "QuacK – Queere Uni-Angehörige an der JKU"
+author = "QuacK Klub"
 
 # Language
 default_language = "de"
@@ -12,6 +13,8 @@ compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+feed_filenames = ["feed.xml"]
 
 [markdown]
 external_links_class = "external-link"
