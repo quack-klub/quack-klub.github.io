@@ -49,14 +49,14 @@
       {% if page.summary %}
       <summary type="html">
         {%- if page.extra.image.path -%}
-        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&lt;
+        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&gt;
         {%- endif -%}
         {{ page.summary }}
       </summary>
       {% else %}
       <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">
         {%- if page.extra.image.path -%}
-        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&lt;
+        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&gt;
         {%- endif -%}
         {{ page.content }}
       </content>
