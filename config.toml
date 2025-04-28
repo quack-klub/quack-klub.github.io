@@ -24,7 +24,10 @@ smart_punctuation = true
 definition_list = true
 
 [extra]
+email = "hello@quack.lgbt"
+
 favicon.path = "/assets/favicon.svg"
+banner.path = "/img/default-preview.webp"
 
 [extra.nav]
 [[extra.nav.items]]
