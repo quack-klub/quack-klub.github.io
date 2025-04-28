@@ -41,15 +41,25 @@
         </name>
       </author>
       {% endfor %}
-      <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
+      <link rel="via" type="text/html" href="{{ page.permalink | safe }}"/>
       {% if page.extra.image.path %}
       <link rel="enclosure" type="image/webp" href="{{ get_url(path=page.extra.image.path) }}"/>
       {% endif %}
       <id>{{ page.permalink | safe }}</id>
       {% if page.summary %}
-      <summary type="html">{{ page.summary }}</summary>
+      <summary type="html">
+        {%- if page.extra.image.path -%}
+        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&lt;
+        {%- endif -%}
+        {{ page.summary }}
+      </summary>
       {% else %}
-      <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content }}</content>
+      <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">
+        {%- if page.extra.image.path -%}
+        &lt;img src="{{ get_url(path=page.extra.image.path) }}" alt="{{ page.extra.image.alt }}"&gt;&lt;br&lt;
+        {%- endif -%}
+        {{ page.content }}
+      </content>
       {% endif %}
     </entry>
   {%- endfor %}
