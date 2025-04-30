@@ -1,12 +1,14 @@
+$symbols-font: "Material Symbols Outlined";
+
 @font-face {
-  font-family: "Material Symbols Outlined";
+  font-family: $symbols-font;
   font-style: normal;
   font-weight: 100 700;
   src: url("/fonts/MaterialSymbols/Symbols-Outlined.woff2") format("woff2");
 }
 
 .symbol {
-  font-family: "Material Symbols Outlined";
+  font-family: $symbols-font;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;

@@ -1,0 +1,13 @@
+.external-link {
+  &::after {
+    content: "open_in_new";
+    font-family: $symbols-font;
+    padding-left: 0.0625em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.95em;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: bottom;
+  }
+}
