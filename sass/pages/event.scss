@@ -14,6 +14,18 @@
     &.medium {
       border-spacing: 2em 1.4em;
 
+      th {
+        word-break: keep-all;
+        white-space: nowrap;
+        word-wrap: normal;
+        hyphens: none;
+        colum-width: 1fr;
+      }
+
+      tr {
+        column-width: auto;
+      }
+
       @media (max-width: var(--breakpoint-compact)) {
         & {
           width: 100%;
