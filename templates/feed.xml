@@ -67,7 +67,7 @@
         {%- endif -%}
         {{ page.summary }}
       </summary>
-      {% else %}
+      {% endif %}
       <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">
         {%- if page.extra.image.path -%}
         &lt;img
@@ -77,7 +77,6 @@
         {%- endif -%}
         {{- page.content -}}
       </content>
-      {%- endif %}
     </entry>
   {%- endfor %}
 </feed>
