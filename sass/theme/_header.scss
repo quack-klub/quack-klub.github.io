@@ -174,12 +174,19 @@ header {
     display: grid;
     list-style-type: none;
     padding: 0;
+    width: 100%;
 
     li {
-      margin: calc(var(--logo-height) / 3) calc(var(--logo-height) / 6);
-
       a {
+        padding: calc(var(--logo-height) / 4) calc(var(--logo-height) / 3);
         color: var(--text);
+        display: block;
+        border-radius: 50px;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+          background-color: var(--selection-hover-overlay);
+        }
       }
     }
   }
