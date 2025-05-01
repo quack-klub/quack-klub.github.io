@@ -3,6 +3,8 @@ title = "30. Queerulanten­treff: Spaziergang zum Plesch’"
 description = "Wir gehen gemeinsam zum Pleschinger See spazieren."
 date = 2025-05-10T14:00:00
 
+aliases = ["/events/queerulantentreff"]
+
 [extra]
 location = "JKU | Kepler Hall"
 end_date = 2025-05-10T17:00:00
