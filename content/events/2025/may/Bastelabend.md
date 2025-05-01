@@ -3,7 +3,7 @@ title = "Bastelabend"
 description = "Ein gemütlicher Bastelabend"
 date = 2025-05-05T17:00:00
 
-aliases = ["/events/bastelabed"]
+aliases = ["/events/bastelabend"]
 
 [extra]
 location = "JKU | K 001A"
