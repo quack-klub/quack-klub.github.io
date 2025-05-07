@@ -1,0 +1,17 @@
+header {
+  $col1: color-mix(in oklab, var(--background) 80%, var(--accent) 20%);
+  $col2: color-mix(in oklab, $col1 95%, black 8%);
+
+  background: linear-gradient(
+    -135deg,
+    $col2 25%,
+    $col1 25%,
+    $col1 50%,
+    $col2 50%,
+    $col2 75%,
+    $col1 75%,
+    $col1 100%
+  );
+  background-size: 170px 170px;
+  opacity: 0.9;
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="{{ get_url(path="theme/variants/error-header.css") }}">
+{% endblock head %}
+
+{% block content %}
+<div class="content">
+  <div class="title-block pulse">
+    <h1 class="title">Diese Seite gibt’s nicht!</h1>
+
+    <h2 class="subtitle">404 — Not found</h2>
+  </div>
+
+  <p>Tut uns leid, aber die Seite auf die du gerade gehen wolltest existiert nicht :(</p>
+
+  <p>Am besten gehst du zur <a href="/">Homepage</a> zurück, da findest du hoffentlich was du suchst!</p>
+
+</div>
+
+{% endblock content %}
