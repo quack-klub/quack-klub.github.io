@@ -4,7 +4,13 @@ $symbols-font: "Material Symbols Outlined";
   font-family: $symbols-font;
   font-style: normal;
   font-weight: 100 700;
-  src: url("/fonts/MaterialSymbols/Symbols-Outlined.woff2") format("woff2");
+  src:
+    local("Material Symbols Outlined"),
+    local("Material-Symbols-Outlined"),
+    local("Symbols Outlined"),
+    local("Symbols-Outlined"),
+    url("/fonts/MaterialSymbols/Symbols-Outlined.woff2") format("woff2");
+  font-display: swap;
 }
 
 .symbol {
