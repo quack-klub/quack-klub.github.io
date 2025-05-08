@@ -178,6 +178,7 @@ header {
 
     li {
       a {
+        -webkit-tap-highlight-color: transparent;
         padding: calc(var(--logo-height) / 4) calc(var(--logo-height) / 3);
         color: var(--text);
         display: block;
