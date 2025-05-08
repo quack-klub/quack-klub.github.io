@@ -17,17 +17,20 @@
   <meta name="twitter:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU">
 {% endblock head %}
 
+{% block pre_content %}
+  <section class="cover">
+    <div class="title-block pulse">
+      <h1 class="title">{{ section.title }}</h1>
+
+      {% if section.description %}
+      <h2 class="subtitle">{{ section.description }}</h2>
+      {% endif %}
+    </div>
+  </section>
+{% endblock pre_content %}
 
 {% block content %}
-
-<section class="cover">
-  <div class="title-block pulse">
-    <h1 class="title">{{ section.title }}</h1>
-
-    {% if section.description %}
-    <h2 class="subtitle">{{ section.description }}</h2>
-    {% endif %}
-  </div>
-</section>
-
+<div class="content">
+  {{ section.content | safe }}
+</div>
 {% endblock content %}

@@ -1,7 +1,3 @@
-main {
-  margin: 0;
-}
-
 .cover {
   @media (min-width: 1025px) {
     --title-size: 4rem;
@@ -75,7 +71,6 @@ main {
 
     @media (min-width: 1025px) {
       & {
-        margin: calc(var(--logo-height) * 2) var(--logo-height);
         padding: var(--logo-height) calc(var(--logo-height) * 2)
           calc(var(--logo-height) * 1.3);
       }
