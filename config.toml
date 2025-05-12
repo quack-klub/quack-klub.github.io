@@ -39,5 +39,14 @@ path = "/contact"
 label = "Kontakt"
 
 [[extra.nav.items]]
-path = "/about"
-label = "Über QuacK"
+path = "/the-club"
+label = "Der Klub"
+
+[extra.footer]
+[[extra.footer.items]]
+path = "/transparency"
+extra = "Transparenz"
+
+[[extra.footer.items]]
+path = "/impressum"
+label = "Impressum"
