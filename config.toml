@@ -45,7 +45,7 @@ label = "Der Klub"
 [extra.footer]
 [[extra.footer.items]]
 path = "/transparency"
-extra = "Transparenz"
+label = "Transparenz"
 
 [[extra.footer.items]]
 path = "/impressum"

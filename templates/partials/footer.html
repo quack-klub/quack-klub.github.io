@@ -1,0 +1,11 @@
+<footer style="view-transition-name: header">
+  {% if config.extra.footer.items %}
+    <nav style="view-transition-name: footer-nav">
+      <ul class="nav-items">
+        {% for item in config.extra.footer.items %}
+          <li><a href="{{ item.path }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+</footer>
