@@ -8,7 +8,7 @@ page_template = "page.html"
 
 ## Willkommen bei QuacK!
 
-Wir sind die Gruppe von und für queere Studierende und Universitäts-Angehöroge an der JKU! Mehr als eine Gruppe – wir sind auch ein akkreditierter Klub mit der Hochschüler\*innenschaft der JKU!
+Wir sind die Gruppe von und für queere Studierende und Universitäts-Angehörige an der JKU! Mehr als eine Gruppe – wir sind auch ein akkreditierter Klub mit der Hochschüler\*innenschaft der JKU!
 
 ### Was wir so machen
 
