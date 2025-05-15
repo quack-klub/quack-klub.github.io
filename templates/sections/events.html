@@ -97,7 +97,7 @@
 
   <ul class="events-list">
 
-  {% for event in section.pages | reverse %}
+  {% for event in section.pages %}
   {% set time_event = event.date | date(format="%s") | int %}
 
   {% if time_event < time_now %}
