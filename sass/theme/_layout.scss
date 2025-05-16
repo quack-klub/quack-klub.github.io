@@ -32,6 +32,10 @@ div.spacer {
   height: var(--logo-height);
 }
 
+div.spacer-half {
+  height: calc(var(--logo-height) / 2);
+}
+
 div.content {
   width: min(100%, 1200px);
   margin-left: auto;

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="{{ get_url(path="sections/transparency.css") }}">
+
+  <meta name="keywords" content="quack,queer,jku,linz,jku queer,transparency">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="og:image" content="{{ get_url(path="/img/default-preview.webp") }}">
+  <meta name="twitter:image" content="{{ get_url(path="/img/default-preview.webp") }}">
+
+  <meta name="og:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU">
+  <meta name="twitter:image:alt" content="Das QuacK Logo mit dem Text QuacK – Queere Uni-Angehörige an der JKU">
+{% endblock head %}
+
+{% block content %}
+<div class="content">
+
+{% if section.title %}
+<div class="title-block pulse">
+  <h1 class="title">{{ section.title }}</h1>
+
+  {% if section.description %}
+  <h2 class="subtitle">{{ section.description }}</h2>
+  {% endif %}
+</div>
+{% endif %}
+
+{% for subsection_link in section.subsections %}
+  {% set subsection = get_section(path=subsection_link) %}
+
+  <section class="transparency-block">
+    <h2>{{ subsection.title }}</h2>
+    {% if subsection.description %}
+      <p><em>{{ subsection.description }}</em></p>
+    {% endif %}
+
+    <ul>
+      {% for page in subsection.pages %}
+        <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <a class="cta" href="{{ subsection.path }}">Mehr anzeigen</a>
+  </section>
+
+  <div class="spacer-half" aria-hidden="true"></div>
+
+{% endfor %}
+
+</div>
+{% endblock content %}
