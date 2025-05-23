@@ -13,19 +13,19 @@
 {# Title #}
 {% if page.title %}
   <title>{{ page.title }}</title>
-  <meta name="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{{ page.title }}">
   <meta name="twitter:title" content="{{ page.title }}">
 {% elif section.title %}
   <title>{{ section.title }}</title>
-  <meta name="og:title" content="{{ section.title }}">
+  <meta property="og:title" content="{{ section.title }}">
   <meta name="twitter:title" content="{{ section.title }}">
 {% elif config.title %}
   <title>{{ config.title }}</title>
-  <meta name="og:title" content="{{ config.title }}">
+  <meta property="og:title" content="{{ config.title }}">
   <meta name="twitter:title" content="{{ config.title }}">
 {% else %}
   <title>QuacK</title>
-  <meta name="og:title" content="QuacK">
+  <meta property="og:title" content="QuacK">
 {% endif %}
 
 {# Description #}

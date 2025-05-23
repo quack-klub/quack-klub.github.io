@@ -2,14 +2,14 @@
 
 {% block head %}
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="og:type" content="article">
+  <meta property="og:type" content="article">
 
   {% if page.extra.image.path %}
-    <meta name="og:image" content="{{ get_url(path=page.extra.image.path) }}">
+    <meta property="og:image" content="{{ get_url(path=page.extra.image.path) }}">
     <meta name="twitter:image" content="{{ get_url(path=page.extra.image.path) }}">
 
     {% if page.extra.image.alt %}
-      <meta name="og:image:alt" content="{{ page.extra.image.alt }}">
+      <meta property="og:image:alt" content="{{ page.extra.image.alt }}">
       <meta name="twitter:image:alt" content="{{ page.extra.image.alt }}">
     {% endif %}
   {% endif %}
