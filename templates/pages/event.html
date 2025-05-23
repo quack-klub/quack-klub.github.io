@@ -56,7 +56,7 @@
       {% if page.extra.location %}
       <tr>
         <th scope="row"><span class="symbol" aira-hidden="true">map</span>Ort</th>
-        <td><span itemscope itemtype="https://schema.org/Place">
+        <td><span itemprop="location" itemscope itemtype="https://schema.org/Place">
           <span itemprop="name">{{ page.extra.location | safe }}</span>
         </span></td>
       </tr>
