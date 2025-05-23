@@ -23,13 +23,13 @@
 
 {% block content %}
 
-<div class="content">
+<div class="content" itemscope itemtype="http://schema.org/Event">
 {% if page.title %}
 <div class="title-block pulse">
-  <h1 class="title">{{ page.title }}</h1>
+  <h1 itemprop="name" class="title">{{ page.title }}</h1>
 
   {% if page.description %}
-  <h2 class="subtitle">{{ page.description }}</h2>
+  <h2 itemprop="description" class="subtitle">{{ page.description }}</h2>
   {% endif %}
 </div>
 {% endif %}
@@ -46,9 +46,9 @@
       <tr>
         <th scope="row"><span class="symbol" aria-hidden="true">schedule</span>Uhrzeit</th>
         <td>
-          <time datetime="{{ page.date }}">{{ page.date | date(format="%H:%M", locale="de_AT") }}</time>
+          <time itemprop="startDate" datetime="{{ page.date }}">{{ page.date | date(format="%H:%M", locale="de_AT") }}</time>
           {%- if page.extra.end_date and "T" in page.extra.end_date -%}
-            &ndash;<time datetime="{{ page.extra.end_date }}">{{ page.extra.end_date | date(format="%H:%M", locale="de_AT") }}</time>
+            &ndash;<time itemprop="endDate" datetime="{{ page.extra.end_date }}">{{ page.extra.end_date | date(format="%H:%M", locale="de_AT") }}</time>
           {%- endif -%}
         </td>
       </tr>
@@ -56,7 +56,9 @@
       {% if page.extra.location %}
       <tr>
         <th scope="row"><span class="symbol" aira-hidden="true">map</span>Ort</th>
-        <td>{{ page.extra.location | safe }}</td>
+        <td><span itemscope itemtype="https://schema.org/Place">
+          <span itemprop="name">{{ page.extra.location | safe }}</span>
+        </span></td>
       </tr>
       {% endif %}
     </tbody>
@@ -96,6 +98,7 @@
 
     {% if page.extra.image.alt %}
       <img
+        itemprop="image"
         alt="{{ page.extra.image.alt }}"
         src="{{ page.extra.image.path | safe }}"
       >
