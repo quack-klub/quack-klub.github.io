@@ -1,6 +1,6 @@
 +++
 title = "Zwischen Glitzer und Gegenwind: Drag, Storytime & Reality"
-date = 2025-06-09T17:30:00
+date = 2025-06-04T17:30:00
 
 template = "pages/redirect.html"
 aliases = ["/events/zwischen-glitzer-und-gegenwind"]
