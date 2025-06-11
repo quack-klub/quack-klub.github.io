@@ -19,7 +19,7 @@ Wenn du dir auch nur eine dieser Fragen gestellt hast, dann komm zu unserem Info
 
 Gemeinsam mit dem **[Queer Referat](https://www.oeh.ac.at/referate/queer/) der Bundesvertretung der ÖH** möchten wir offen und ehrlich alle deine Fragen beantworten -- egal wie viel du schon über die LGBTQIA\* Community weißt, egal ob du Teil davon bist. Die einzige Bitte, die wir an dich haben ist, dass du uns mit Respekt gegenüber trittst.
 
-Du kennst dich schon ganz gut aus, aber möchtest mehr über Angebote und Hilfstellungen von und für unsere Community erfahren? Na dann komm vorbei! Wir bieten nicht nur ein "Queer 101", sondern auch eine kleine aber feine Peer Beratung an!
+Du kennst dich schon ganz gut aus, aber möchtest mehr über Angebote und Hilfsstellungen von und für unsere Community erfahren? Na dann komm vorbei! Wir bieten nicht nur ein "Queer 101", sondern auch eine kleine aber feine Peer Beratung an!
 
 ## Wir sind nicht allein!
 
@@ -37,4 +37,4 @@ Wir sind nicht die einzigen, die dir zur Verfügung stehen, denn es freut uns, d
 
 - [Trans\* SHG Linz](https://transinlinz.info/) (angefragt)
 
-Wir bedanken uns bei allen Helfenden und Teilnehmenden, ohne diese Untersützung wäre diese Veranstaltung gar nicht möglich!
+Wir bedanken uns bei allen Helfenden und Teilnehmenden, ohne diese Unterstützung wäre diese Veranstaltung gar nicht möglich!
