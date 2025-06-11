@@ -35,4 +35,6 @@ Wir sind nicht die einzigen, die dir zur Verfügung stehen, denn es freut uns, d
 
 - [VIMÖ -- Verein Intergeschlechtlicher Menschen Österreich](https://vimoe.at/)
 
+- [Trans\* SHG Linz](https://transinlinz.info/) (angefragt)
+
 Wir bedanken uns bei allen Helfenden und Teilnehmenden, ohne diese Untersützung wäre diese Veranstaltung gar nicht möglich!
