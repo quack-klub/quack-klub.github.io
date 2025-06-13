@@ -1,9 +1,9 @@
 +++
 title = "LGBTQIA* Info Stand"
-description = "Peer Beratung & Queer 101"
+description = "Zu Peer Beratung & Queer 101"
 date = 2025-06-23T10:00:00
 
-aliases = ["/events/lgbtqia-info-event/"]
+aliases = ["/events/lgbtqia-info-stand/"]
 
 [extra]
 end_date = 2025-06-23T17:00:00
