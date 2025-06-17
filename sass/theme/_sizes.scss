@@ -3,11 +3,11 @@ $breakpoint-medium: 961px;
 $breakpoint-expanded: 1200px;
 
 :root {
-  --text-size: 1.1rem;
+  --text-size: 1.2rem;
   --title-size: calc(1em * 2.6 / 1.1);
   --subtitle-size: calc(var(--title-size) * 1.7 / 2.6);
 
-  --logo-scaling-factor: 1.2;
+  --logo-scaling-factor: 1.1;
   --logo-height: calc(var(--title-size) * var(--logo-scaling-factor));
   --logo-width: calc(var(--logo-height) * 1.4);
   --pulse-height: calc(var(--logo-height) / 7);
@@ -19,7 +19,7 @@ $breakpoint-expanded: 1200px;
 
   @media (max-width: 481px) {
     & {
-      --text-size: 1rem;
+      --text-size: 1.1rem;
     }
   }
 }
