@@ -34,6 +34,15 @@
 </div>
 {% endif %}
 
+{%- if page.extra.attendance and page.extra.attendance == "online" -%}
+{% set attendance_mode = "https://schema.org/OnlineEventAttendanceMode" %}
+{%- elif page.extra.attendance and page.extra.attendance == "mixed" -%}
+{% set attendance_mode = "https://schema.org/MixedEventAttendanceMode" %}
+{%- else -%}
+{% set attendance_mode = "https://schema.org/OfflineEventAttendanceMode" %}
+{%- endif -%}
+<meta itemprop="eventAttendanceMode" content="{{ attendance_mode | safe }}">
+
 <section class="event-content">
 
   <table class="medium">
@@ -55,7 +64,7 @@
       {% endif %}
       {% if page.extra.location %}
       <tr>
-        <th scope="row"><span class="symbol" aira-hidden="true">map</span>Ort</th>
+        <th scope="row"><span class="symbol" aria-hidden="true">map</span>Ort</th>
         <td><span itemprop="location" itemscope itemtype="https://schema.org/Place">
           <span itemprop="name">{{ page.extra.location | safe }}</span>
         </span></td>
@@ -65,9 +74,9 @@
   </table>
 
   <table class="not-medium">
-    <colgroup span="2" id="col-date" />
-    {% if "T" in page.date %} <colgroup span="2" id="col-time" /> {% endif %}
-    {% if page.extra.location %} <colgroup span="2" id="col-location" /> {% endif %}
+    <colgroup span="2" id="col-date">
+    {% if "T" in page.date %} <colgroup span="2" id="col-time"> {% endif %}
+    {% if page.extra.location %} <colgroup span="2" id="col-location"> {% endif %}
     <tbody>
      <tr>
        <th scope="colgroup"><span class="symbol" aria-hidden="true">event</span>Datum</th>
@@ -83,7 +92,7 @@
          </td>
        {% endif %}
        {% if page.extra.location %}
-         <th scope="colgroup"><span class="symbol" aira-hidden="true">map</span>Ort</th>
+         <th scope="colgroup"><span class="symbol" aria-hidden="true">map</span>Ort</th>
          <td>{{ page.extra.location | safe }}</td>
        {% endif %}
      </tr>
