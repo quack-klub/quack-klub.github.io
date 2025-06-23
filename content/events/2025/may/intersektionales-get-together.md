@@ -3,12 +3,6 @@ title = "Intersektionales Get Together"
 description = "Für ein diskriminierungsfreieres Miteinander!"
 date = 2025-05-28T17:15:00
 
-aliases = [
-  "/events/igt",
-  "/events/intersektionales",
-  "/events/intersektionales-get-together"
-]
-
 [extra]
 location = "JKU | K 009D"
 end_date = 2025-05-28T20:15:00
