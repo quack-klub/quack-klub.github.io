@@ -1,4 +1,4 @@
-  +++
++++
 title = "Intersektionales Get Together"
 description = "Für ein diskriminierungsfreieres Miteinander!"
 date = 2025-06-25T16:30:00
