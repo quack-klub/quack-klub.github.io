@@ -2,6 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="base" content="{{ config.base_url }}">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; object-src 'none'; script-src-elem https://quack.lgbt/js/nav.js; script-src-attr 'none'; style-src-elem https://quack.lgbt/; style-src-attr 'unsafe-hashes' 'sha256-1iIsOmkY5/woYXeWjVk1Bi2XPa7hyAdZkMmcNNbLZSM=' 'sha256-DoP+pmsJt2At9jnk4u8hD8TsF/4D1sLZKy6bPLHXg8Y=' 'sha256-yfNKWmDUMqRg1Xlvm5oNFru839TA3PpkZabc7J4GwMI='; form-action 'none'; base-uri 'self'; font-src https://quack.lgbt/fonts/">
 
 {# Metadata #}
 {% if page.extra.meta %}
@@ -11,22 +12,20 @@
 {% endif %}
 
 {# Title #}
-{% if page.title %}
-  <title>{{ page.title }}</title>
-  <meta property="og:title" content="{{ page.title }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-{% elif section.title %}
-  <title>{{ section.title }}</title>
-  <meta property="og:title" content="{{ section.title }}">
-  <meta name="twitter:title" content="{{ section.title }}">
-{% elif config.title %}
-  <title>{{ config.title }}</title>
-  <meta property="og:title" content="{{ config.title }}">
-  <meta name="twitter:title" content="{{ config.title }}">
-{% else %}
-  <title>QuacK</title>
-  <meta property="og:title" content="QuacK">
-{% endif %}
+{%- if page.title -%}
+  {%- set title = page.title -%}
+{%- elif section.title -%}
+  {%- set title = section.title -%}
+{%- else -%}
+  {%- set title = config.title -%}
+{%- endif -%}
+{%- if title != "QuacK" -%}
+  {%- set title = title ~ " – " ~ config.title -%}
+{%- endif -%}
+
+<title>{{ title | escape }}</title>
+<meta property="og:title" content="{{ title }}">
+<meta name="twitter:title" content="{{ title }}">
 
 {# Description #}
 {% if page.description %}
