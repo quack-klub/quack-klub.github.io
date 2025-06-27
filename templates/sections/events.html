@@ -39,6 +39,7 @@
 <div class="spacer"></div>
 
 <article>
+  {%- set has_current_events = false -%}
   <h2>Kommende Events</h2>
 
   <ul class="events-list">
@@ -47,6 +48,7 @@
   {% set time_event = event.date | date(format="%s") | int %}
 
   {% if time_event >= time_now %}
+  {%- set has_current_events = true -%}
 
   <li class="event-item">
 
@@ -98,6 +100,10 @@
   {% endif %}
   {% endfor %}
   </ul>
+
+  {% if not has_current_events %}
+  <p>Aktuell sind leider keine weiteren Events geplant. Falls du Ideen für Events hast, kannst du uns diese gerne mitteilen! Schau dafür einfach bei unseren <a href="/contact">Kontaktmöglichkeiten</a> vorbei.</p>
+  {% endif %}
 </article>
 
 <div class="spacer"></div>
