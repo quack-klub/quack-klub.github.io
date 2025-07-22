@@ -26,7 +26,7 @@
 <div class="content" itemscope itemtype="http://schema.org/Event">
 {% if page.title %}
 <div class="title-block pulse">
-  <h1 itemprop="name" class="title">{{ page.title }}</h1>
+  <h1 itemprop="name" class="title">{{ page.title | safe }}</h1>
 
   {% if page.description %}
   <h2 itemprop="description" class="subtitle">{{ page.description }}</h2>

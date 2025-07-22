@@ -45,10 +45,10 @@
   <ul class="events-list">
 
   {% for event in section.pages | reverse %}
-  {% set time_event = event.date | date(format="%s") | int %}
+  {% set_global time_event = event.date | date(format="%s") | int %}
 
   {% if time_event >= time_now %}
-  {%- set has_current_events = true -%}
+  {%- set_global has_current_events = true -%}
 
   <li class="event-item">
 
@@ -73,7 +73,7 @@
     {% endif %}
 
     <article>
-      <h4 class="event-title"><a href="{{ event.path }}">{{ event.title }}</a></h4>
+      <h4 class="event-title"><a href="{{ event.path }}">{{ event.title | safe }}</a></h4>
 
       {% if event.summary %}
         {{ event.summary | safe }}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de" prefix="og: http://ogp.me/ns#">
+<html lang="{% if page.lang %}{{ page.lang }}{% elif section.lang %}{{ section.lang }}{% else %}{{ config.default_language }}{% endif %}" prefix="og: http://ogp.me/ns#">
   <head>
     {% include "partials/head.html" %}
     {% block head %} {% endblock head %}
