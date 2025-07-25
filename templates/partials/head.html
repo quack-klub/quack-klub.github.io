@@ -24,8 +24,8 @@
 {%- endif -%}
 
 <title>{{ title | escape }}</title>
-<meta property="og:title" content="{{ title }}">
-<meta name="twitter:title" content="{{ title }}">
+<meta property="og:title" content="{{ title | striptags }}">
+<meta name="twitter:title" content="{{ title | striptags }}">
 
 {# Description #}
 {% if page.description %}
