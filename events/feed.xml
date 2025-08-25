@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+  <title>QuacK / Events</title>
+  <author>
+    <name>QuacK Klub</name>
+    <uri>https:&#x2F;&#x2F;quack.lgbt</uri>
+    <email>hello@quack.lgbt</email>
+  </author>
+  <icon>https://quack.lgbt/assets/favicon.svg</icon>
+  <logo>https://quack.lgbt/img/default-preview.webp</logo>
+  <subtitle>QuacK – Queere Uni-Angehörige an der JKU</subtitle>
+  <link rel="self" type="application/atom+xml" href="https://quack.lgbt/events/feed.xml"/>
+  <link rel="alternate" type="text/html" href="https://quack.lgbt/events/"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+  <updated>2025-07-26T14:00:00+00:00</updated>
+  <id>https://quack.lgbt/events/feed.xml</id>
+    <entry xml:lang="de">
+      <title>31&lt;sup&gt;st&lt;&#x2F;sup&gt; Queerulanten­treff: “A Kepler Hall Picnic”</title>
+      <published>2025-07-26T14:00:00+00:00</published>
+      <updated>2025-07-26T14:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/july/queerulantentreff/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/queerulantentreff_kepler_hall_picnic.webp"/>
+      <id>https://quack.lgbt/events/2025/july/queerulantentreff/</id>
+      <summary type="html">&lt;img
+          src=&quot;https://quack.lgbt/img/events/queerulantentreff_kepler_hall_picnic.webp&quot;
+          alt=&quot;The image shows some picnic blankets with two avocado bagels as well as a fruit bowl. Centered above the background is the tetxt &amp;quot;31st Queerulantentreff—A Kepler Hall Picnic&amp;quot;.&quot;
+        &gt;&lt;p&gt;Before we take a little summer break we want to get together for one more picnic!&lt;&#x2F;p&gt;
+      </summary>
+      
+      <content type="html" xml:base="https://quack.lgbt/events/2025/july/queerulantentreff/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/queerulantentreff_kepler_hall_picnic.webp&quot;
+          alt=&quot;The image shows some picnic blankets with two avocado bagels as well as a fruit bowl. Centered above the background is the tetxt &amp;amp;quot;31st Queerulantentreff—A Kepler Hall Picnic&amp;amp;quot;.&quot;
+        &gt;&lt;p&gt;Before we take a little summer break we want to get together for one more picnic!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;So pack your favorite snack and join us for a relaxed and cozy get together at JKU!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;The more people you bring along, the more we’ll have to snack!&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Intersektionales Get Together</title>
+      <published>2025-06-25T16:30:00+00:00</published>
+      <updated>2025-06-25T16:30:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/intersektionales-get-together/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/igt.webp"/>
+      <id>https://quack.lgbt/events/2025/june/intersektionales-get-together/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/intersektionales-get-together/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/igt.webp&quot;
+          alt=&quot;Illustration einer Person im Rollstuhl mit ausgestreckten Armen, die das &amp;amp;quot;Intersektionale Get Together&amp;amp;quot; am Mittwoch, 25. Juni um 16:30 im K 001A an der JKU bewirbt. Schwarzer Text auf weißem Hintergrund: &amp;amp;quot;Für ein diskriminierungsfreieres Miteinander&amp;amp;quot;.&quot;
+        &gt;&lt;p&gt;Auch im Pride Month gibt es wieder ein Intersektionales Get Together! Und auch dieses Mal ist QuacK in (nur) in unterstützender Form dabei, und das freut uns!&lt;&#x2F;p&gt;
+&lt;p&gt;Es freut uns, wenn nicht nur queere Themen im Vordergrund stehen und wir freuen uns genauso wie ihr alle auf das diesmonatliche Get Together!&lt;&#x2F;p&gt;
+&lt;p&gt;Also kommt vorbei, wir zählen auf euch!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>LGBTQIA* Info Stand</title>
+      <published>2025-06-23T10:00:00+00:00</published>
+      <updated>2025-06-23T10:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/lgbtqia-info-stand/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/queer-info-event.webp"/>
+      <id>https://quack.lgbt/events/2025/june/lgbtqia-info-stand/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/lgbtqia-info-stand/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/queer-info-event.webp&quot;
+          alt=&quot;Regenbogen Hintergrund, darüber eine dunkel Blaue Box mit dem Text &amp;amp;quot;LGBTQIA* Info Stand: Peer-Beratung &amp;amp; Queer 101&amp;amp;quot;&quot;
+        &gt;&lt;p&gt;&lt;em&gt;Du hast Fragen zur LGBTQIA* Community? Du suchst nach queeren Menschen an und um die JKU? Du bist dir immernoch nicht sicher, was es heißt trans* oder nicht-binär zu sein? Du hast noch nie etwas von integergeschlechtlichkeit gehört?&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn du dir auch nur eine dieser Fragen gestellt hast, dann komm zu unserem Info Stand! Wir bieten dir eine angenehme Atmosphäre, Snacks und jede menge Gespräche.&lt;&#x2F;p&gt;
+&lt;p&gt;Gemeinsam mit dem &lt;strong&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;www.oeh.ac.at&#x2F;referate&#x2F;queer&#x2F;&quot;&gt;Queer Referat&lt;&#x2F;a&gt; der Bundesvertretung der ÖH&lt;&#x2F;strong&gt; möchten wir offen und ehrlich alle deine Fragen beantworten – egal wie viel du schon über die LGBTQIA* Community weißt, egal ob du Teil davon bist. Die einzige Bitte, die wir an dich haben ist, dass du uns mit Respekt gegenüber trittst.&lt;&#x2F;p&gt;
+&lt;p&gt;Du kennst dich schon ganz gut aus, aber möchtest mehr über Angebote und Hilfsstellungen von und für unsere Community erfahren? Na dann komm vorbei! Wir bieten nicht nur ein “Queer 101”, sondern auch eine kleine aber feine Peer Beratung an!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;wir-sind-nicht-allein&quot;&gt;Wir sind nicht allein!&lt;&#x2F;h2&gt;
+&lt;p&gt;Wir sind nicht die einzigen, die dir zur Verfügung stehen, denn es freut uns, dass bei dieser Veranstaltung ganze sechs (6) Vereine, Gruppen, und Abteilungen teilnehmen, die unsere Community sowohl an der JKU als auch in ganz Linz vertreten und stärken. Mit dabei sind:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;oeh.jku.at&#x2F;oeh-jku&#x2F;referate&#x2F;frauen-gender-und-gleichbehandlungsfragen&quot;&gt;ÖH JKU Referat für Frauen, Gender und Gleichbehandlungsfragen&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;www.jku.at&#x2F;gleichstellung-chancengerechtigkeit-und-vielfalt&#x2F;&quot;&gt;JKU Abteilung Gleichstellung, Chancengerechtigkeit und Vielfalt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;https:&#x2F;&#x2F;www.hosilinz.at&#x2F;&quot;&gt;HOSI Linz&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;younited.cc&#x2F;&quot;&gt;younited&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;vimoe.at&#x2F;&quot;&gt;VIMÖ – Verein Intergeschlechtlicher Menschen Österreich&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;transinlinz.info&#x2F;&quot;&gt;Trans* SHG Linz&lt;&#x2F;a&gt; (angefragt)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Wir bedanken uns bei allen Helfenden und Teilnehmenden, ohne diese Unterstützung wäre diese Veranstaltung gar nicht möglich!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>JKU goes Pride!</title>
+      <published>2025-06-21T14:00:00+00:00</published>
+      <updated>2025-06-21T14:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/linzpride/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/linzpride2025.webp"/>
+      <id>https://quack.lgbt/events/2025/june/linzpride/</id>
+      <summary type="html">&lt;img
+          src=&quot;https://quack.lgbt/img/events/linzpride2025.webp&quot;
+          alt=&quot;Im Hintergrund sind verschiedene Hände mit verschiedenen Hautfarben zu sehen. Alle tragen Armbänder, manche davon in Regenbogenfarben. Die mittleren zwei Hände bilden gemeinsam ein Herz. Über dem Hintergrund steht der weiße Text &amp;quot;JKU goes Pride!&amp;quot;&quot;
+        &gt;&lt;p&gt;Am Samstag, den 21. Juni 2025, ist es wieder so weit: Die #linzpride Parade zieht durch die Straßen – und die JKU ist heuer zum ersten Mal und ganz vorne im Umzug mit dabei! Gemeinsam mit QuacK setzen wir ein starkes Zeichen für Vielfalt, Respekt und Gleichberechtigung.&lt;&#x2F;p&gt;
+      </summary>
+      
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/linzpride/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/linzpride2025.webp&quot;
+          alt=&quot;Im Hintergrund sind verschiedene Hände mit verschiedenen Hautfarben zu sehen. Alle tragen Armbänder, manche davon in Regenbogenfarben. Die mittleren zwei Hände bilden gemeinsam ein Herz. Über dem Hintergrund steht der weiße Text &amp;amp;quot;JKU goes Pride!&amp;amp;quot;&quot;
+        &gt;&lt;p&gt;Am Samstag, den 21. Juni 2025, ist es wieder so weit: Die #linzpride Parade zieht durch die Straßen – und die JKU ist heuer zum ersten Mal und ganz vorne im Umzug mit dabei! Gemeinsam mit QuacK setzen wir ein starkes Zeichen für Vielfalt, Respekt und Gleichberechtigung.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Mehr Infos zu JKU goes Pride findest du hier:&lt;br&gt; &lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;www.jku.at&#x2F;gleichstellung-chancengerechtigkeit-und-vielfalt&#x2F;arbeitsfelder&#x2F;diversity&#x2F;detail&#x2F;news&#x2F;jku-goes-pride&#x2F;&quot;&gt;www.jku.at&#x2F;gleichstellung-chancengerechtigkeit-und-vielfalt&#x2F;arbeitsfelder&#x2F;diversity&#x2F;detail&#x2F;news&#x2F;jku-goes-pride&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Und alle aktuellen Infos zur linzpride2025, der Route und allen Angeboten gibt’s hier:&lt;br&gt;
+&lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;www.linzpride.at&#x2F;prideparade-2025&#x2F;&quot;&gt;www.linzpride.at&#x2F;prideparade-2025&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Queer Bier um 4</title>
+      <published>2025-06-16T16:00:00+00:00</published>
+      <updated>2025-06-16T16:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/queer-bier-um-4/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/qb4.webp"/>
+      <id>https://quack.lgbt/events/2025/june/queer-bier-um-4/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/queer-bier-um-4/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/qb4.webp&quot;
+          alt=&quot;Weißer Hintergrund. Rechts der Text &amp;amp;quot;Queer Bier um 4&amp;amp;quot;, links eine Regenbogen Flagge und ein Bierkrug.&quot;
+        &gt;&lt;p&gt;Letztes Jahr war unserer queerer Stammtisch ein voller Erfolg. Seit dem wurden wir nun schon mehrmals gefragt, wann wir denn das nächste Mal einen queeren Stammtisch abhalten.&lt;&#x2F;p&gt;
+&lt;p&gt;Jetzt ist es so weit! Queer Bier um 4 geht in die zweite Runde und wir freuen uns schon, euch alle wiederzusehen! Merkt euch den Termin, kommt vorbei und lasst uns gemeinsam ein kaltes Bier – oder irgendein anderes Getränk eurer Wahl – genießen!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Bastelabend</title>
+      <published>2025-06-09T17:00:00+00:00</published>
+      <updated>2025-06-09T17:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/bastelabend/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/bastelabend.webp"/>
+      <id>https://quack.lgbt/events/2025/june/bastelabend/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/bastelabend/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/bastelabend.webp&quot;
+          alt=&quot;Der Text &amp;amp;quot;Bastelabend&amp;amp;quot; steht vor einem Tisch voll mit Holzperlen&quot;
+        &gt;&lt;p&gt;Was gibt es schöneres als gemeinsam bei guter Hintergrundmusik beisammen zu sitzen und etwas schönes zu basteln? Genau das haben wir uns auch gefragt und deshalb einen gemeinsamen Bastelabend geplant!&lt;&#x2F;p&gt;
+&lt;p&gt;Wir bieten euch Bügelperlen, Freundschaftsarmbänder, Papier und Buttons! Ja, richtig gehört: Buttons! Es ist also für vieles gesorgt, ihr dürft aber natürlich auch eigenes Material mitbringen! Umso mehr wir haben, umso mehr tolle Sachen können wir gemeinsam machen!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Zwischen Glitzer und Gegenwind: Drag, Storytime &amp; Reality</title>
+      <published>2025-06-04T17:30:00+00:00</published>
+      <updated>2025-06-04T17:30:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/june/zwischen-glitzer-und-gegenwind/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/zwischen-glitzer-und-gegenwind.webp"/>
+      <id>https://quack.lgbt/events/2025/june/zwischen-glitzer-und-gegenwind/</id>
+      <summary type="html">&lt;img
+          src=&quot;https://quack.lgbt/img/events/zwischen-glitzer-und-gegenwind.webp&quot;
+          alt=&quot;Im Hintergrund sind zwei Personen mit Makeup zu sehen, darüber der Text &amp;quot;Zwischen Glitzer und Gegenwind: Drag, Storytime &amp; Reality&amp;quot;&quot;
+        &gt;&lt;p&gt;Zwei Drag Queens geben Einblicke in ihre persönliche Erfahrung mit Drag – auf der Bühne und im Alltag.&lt;&#x2F;p&gt;
+&lt;p&gt;Ein interaktiver Workshop mit Raum für Fragen, Austausch und Perspektiven. Offen für alle, unabhängig von Vorerfahrung oder Hintergrund.&lt;&#x2F;p&gt;
+      </summary>
+      
+      <content type="html" xml:base="https://quack.lgbt/events/2025/june/zwischen-glitzer-und-gegenwind/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/zwischen-glitzer-und-gegenwind.webp&quot;
+          alt=&quot;Im Hintergrund sind zwei Personen mit Makeup zu sehen, darüber der Text &amp;amp;quot;Zwischen Glitzer und Gegenwind: Drag, Storytime &amp;amp; Reality&amp;amp;quot;&quot;
+        &gt;&lt;p&gt;Zwei Drag Queens geben Einblicke in ihre persönliche Erfahrung mit Drag – auf der Bühne und im Alltag.&lt;&#x2F;p&gt;
+&lt;p&gt;Ein interaktiver Workshop mit Raum für Fragen, Austausch und Perspektiven. Offen für alle, unabhängig von Vorerfahrung oder Hintergrund.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Intersektionales Get Together</title>
+      <published>2025-05-28T17:15:00+00:00</published>
+      <updated>2025-05-28T17:15:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/may/intersektionales-get-together/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/igt-femref.webp"/>
+      <id>https://quack.lgbt/events/2025/may/intersektionales-get-together/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/may/intersektionales-get-together/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/igt-femref.webp&quot;
+          alt=&quot;Illustration einer Person im Rollstuhl mit ausgestreckten Armen, die das &amp;amp;quot;Intersektionale Get Together&amp;amp;quot; am Mittwoch, 29. Mai um 17:15 im K 009D an der JKU bewirbt. Violetter Text auf orangem Hintergrund: &amp;amp;quot;Für ein diskriminierungsfreieres Miteinander&amp;amp;quot;.&quot;
+        &gt;&lt;p&gt;&lt;em&gt;Das Intersektionale Get Together wird diesen Monat vom &lt;a class=&quot;external-link&quot; href=&quot;https:&#x2F;&#x2F;oeh.jku.at&#x2F;oeh-jku&#x2F;referate&#x2F;frauen-gender-und-gleichbehandlungsfragen&quot;&gt;ÖH Referat für Frauen, Gender und Gleichbehandlungsfragen&lt;&#x2F;a&gt; veranstaltet, folgend ist der Einladungstext.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Am Mittwoch, den 28.05., um 17:15 Uhr findet wieder unser Intersektionales Get Together an der JKU (Raum K 009D) statt 🎉&lt;&#x2F;p&gt;
+&lt;p&gt;Komm vorbei für einen gemütlichen Austausch mit Spielen &amp;amp; leckeren Snacks!
+Nutze die Chance, um neue Leute und Gleichgesinnte kennenzulernen und gemeinsam eine schöne Zeit zu verbringen.&lt;&#x2F;p&gt;
+&lt;p&gt;Bring auch gerne Freunde mit – wir freuen uns auf euch 🤗&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Queer Bier um 4</title>
+      <published>2025-05-22T16:00:00+00:00</published>
+      <updated>2025-05-22T16:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/may/queer-bier-um-4/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/qb4.webp"/>
+      <id>https://quack.lgbt/events/2025/may/queer-bier-um-4/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/may/queer-bier-um-4/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/qb4.webp&quot;
+          alt=&quot;Weißer Hintergrund. Rechts der Text &amp;amp;quot;Queer Bier um 4&amp;amp;quot;, links eine Regenbogen Flagge und ein Bierkrug.&quot;
+        &gt;&lt;p&gt;Letztes Jahr war unserer queerer Stammtisch ein voller Erfolg. Seit dem wurden wir nun schon mehrmals gefragt, wann wir denn das nächste Mal einen queeren Stammtisch abhalten.&lt;&#x2F;p&gt;
+&lt;p&gt;Jetzt ist es so weit! Queer Bier um 4 geht in die zweite Runde und wir freuen uns schon, euch alle wiederzusehen! Merkt euch den Termin, kommt vorbei und lasst uns gemeinsam ein kaltes Bier – oder irgendein anderes Getränk eurer Wahl – genießen!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>ESC Watchparty</title>
+      <published>2025-05-17T20:00:00+00:00</published>
+      <updated>2025-05-17T20:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/may/esc-watchparty/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/esc_2025.webp"/>
+      <id>https://quack.lgbt/events/2025/may/esc-watchparty/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/may/esc-watchparty/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/esc_2025.webp&quot;
+          alt=&quot;Info Banner mit dem Text &amp;amp;quot;Eurovision Song Contest Watchparty&amp;amp;quot;. Die Logos von QuacK und dem ORF sowie ein Herz im ESC Stiel mit der Schweizer Flagge sind zu sehen.&quot;
+        &gt;&lt;p&gt;Vergangenes Jahr war die von uns organisierte Watchparty zum Finale des Eurovision Song Contests unser mit Abstand meist besuchtes Event. Gerade deshalb haben wir uns dazu entschieden, die Veranstaltung auch dieses Jahr wieder abzuhalten und hoffen, dass ihr genauso zahlreich erscheint!&lt;&#x2F;p&gt;
+&lt;p&gt;Um dieses Ziel zu erreichen bieten wir euch sowohl eine entspannte Atmosphäre, als auch verschiedenste Snacks und Goodies! Wir werden auch wieder Buttons mitbringen, falls du also das erste Mal bei einer unserer Veranstaltungen bist oder noch keinen Button hast, kannst du dir hier einen abholen!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;esc-und-regenbogenfahnen&quot;&gt;ESC und Regenbogenfahnen&lt;&#x2F;h2&gt;
+&lt;p&gt;In den lezten Wochen wurde bekannt, dass der ESC den auftretenden Personen und Gruppen das mitbringen und führen jeglicher Flaggen abgesehen von der eigenen Länderflagge verboten hat. Als QuacK finden wir, dass das eindeutig ein Schritt in die falsche Richtung ist. Bei uns dürft und sollt ihr natürlich weiterhin Regenbogen-, Trans-, Non-binaryflaggen mitbringen, je mehr der ESC versucht seine queere Geschichte und Basis zu verdecken, umso lauter und bunter müssen wir sein.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir werden aufgrund dieser Aktionen seitens der EBU unser Vorhaben den ESC auch nächtes Jahr wieder zu streamen genau überlegen und hoffen, dass die Situation bis dahin geklärt ist, da wir es schade finden würden, wenn wir dieses Event nicht mehr anbieten könnten.&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>30. Queerulanten­treff: Spaziergang zum Plesch’</title>
+      <published>2025-05-10T14:00:00+00:00</published>
+      <updated>2025-05-10T14:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/may/queerulantentreff/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/queerulantentreff_pleschinger.webp"/>
+      <id>https://quack.lgbt/events/2025/may/queerulantentreff/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/may/queerulantentreff/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/queerulantentreff_pleschinger.webp&quot;
+          alt=&quot;Ein Bild des Pleschinger Sees und darüber der Text &amp;amp;quot;30. Queerulantentreff: Spaziergang zum Plesch&amp;amp;quot;&quot;
+        &gt;&lt;p&gt;Zum Anlass des Monats der Vielfalt und unserem 30. Jubiläum wollen wir gemeinsam einen kleinen Spaziergang machen. Dafür treffen wir uns um 14:00 bei der Kepler Hall und brechen dann gemeinsam auf in Richtung Pleschinger See.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir werden durch die grüneren Teile Linz gehen und gemeinsam die umliegenden Gebiete der Uni erkundigen. Am Pleschinger See angekommen wird es ein Picknick und ein gemütliches Beisammensein geben, sowie hausgemachte Mehlspeisen!&lt;&#x2F;p&gt;
+&lt;p&gt;Bitte nimm auch gerne selbst Essen und Trinken mit, je mehr, desto besser!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+    <entry xml:lang="de">
+      <title>Bastelabend</title>
+      <published>2025-05-05T17:00:00+00:00</published>
+      <updated>2025-05-05T17:00:00+00:00</updated>
+      <author>
+        <name>QuacK Klub</name>
+        <uri>https://quack.lgbt</uri>
+        
+        <email>hello@quack.lgbt</email>
+        
+      </author>
+      <link rel="alternate" type="text/html" href="https://quack.lgbt/events/2025/may/bastelabend/"/>
+      <link rel="enclosure" type="image/webp" href="https://quack.lgbt/img/events/bastelabend.webp"/>
+      <id>https://quack.lgbt/events/2025/may/bastelabend/</id>
+      <content type="html" xml:base="https://quack.lgbt/events/2025/may/bastelabend/">&lt;img
+          src=&quot;https://quack.lgbt/img/events/bastelabend.webp&quot;
+          alt=&quot;Der Text &amp;amp;quot;Bastelabend&amp;amp;quot; steht vor einem Tisch voll mit Holzperlen&quot;
+        &gt;&lt;p&gt;Was gibt es schöneres als gemeinsam bei guter Hintergrundmusik beisammen zu sitzen und etwas schönes zu basteln? Genau das haben wir uns auch gefragt und deshalb einen gemeinsamen Bastelabend geplant!&lt;&#x2F;p&gt;
+&lt;p&gt;Wir bieten euch Bügelperlen, Freundschaftsarmbänder, Papier und Buttons! Ja, richtig gehört: Buttons! Es ist also für vieles gesorgt, ihr dürft aber natürlich auch eigenes Material mitbringen! Umso mehr wir haben, umso mehr tolle Sachen können wir gemeinsam machen!&lt;&#x2F;p&gt;
+</content>
+    </entry>
+</feed>
